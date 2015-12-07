@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Evaluación del recurso suelo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="ie.css" /><![endif]-->
+
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" media="screen" />
+	
+	
+    
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" media="screen" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine2//style.css" media="screen" />
+	<script type="text/javascript" src="engine2//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine2//style.css" media="screen" />
+	<script type="text/javascript" src="engine2//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine3//style.css" media="screen" />
+	<script type="text/javascript" src="engine3//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine4//style.css" media="screen" />
+	<script type="text/javascript" src="engine4//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+</head>
+
+<script src="los_script.js" > 
+
+
+
+</script>
+<script src="jquery-1.6.2.min.js">
+</script>
+
+<script>
+
+
+
+//numero=new Array();
+long=4;
+z=1;
+actual=1;
+
+i=0;
+pregunta=[];
+
+A=[];
+pregunta_mostrar=[];
+
+pregunta[0]="¿Los procesos formadores del suelo son?";
+
+pregunta[1]="¿Cómo se llama el proceso formador del suelo que es entrada de materiales y energía?";
+
+pregunta[2]="¿A cuál proceso formador  del suelo corresponde la entrada de agua al pedón? ";
+
+pregunta[3]="¿A cuál proceso formador corresponde la emisión de calor por parte del suelo?";
+
+pregunta[4]="¿A cuál proceso formador corresponde la erosión del suelo?";
+
+pregunta[5]="¿A cuál proceso formador corresponde la evaporación del agua del suelo? ";
+
+pregunta[6]="¿A cuál proceso formador corresponde la descomposición de la materia orgánica y la formación de humus en el suelo? ";
+
+pregunta[7]="¿A cuál proceso formador corresponde la transformación de la materia dentro del suelo? ";
+
+pregunta[8]="¿A cuál proceso formador corresponde la oxidación, hidratación y precipitación de compuestos dentro del suelo? ";
+
+pregunta[9]="¿A cuál proceso formador corresponde el movimiento de materia y/o energía dentro del pedón?";
+
+pregunta[10]="Ejemplos de translocacion";
+
+repartir_y_ordenar(pregunta,A,pregunta_mostrar,11,2);
+
+
+
+
+$(document).ready(function(){
+
+$("#noticia").html($("#noticia1").html());
+cambios(/**z,actual,long, ubicacion,leyenda,ima**/);
+var tiempo=setInterval(function(){ //Cambia los diferentes tipos de procesos
+//contador=0;
+//if(contador<4){
+if(z<5){
+ cambiar(z,actual,long);
+ actual=z;
+ z++;
+ //contador++;
+ 
+}else if(z==5){
+ contador=0;
+ z=1;
+//z=1;
+
+}
+//}
+
+},4000);
+
+
+
+$("#pregunta1 p").text("1) "+pregunta_mostrar[0]);
+$("#pregunta2 p").text("2) "+pregunta_mostrar[1]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
+
+
+
+
+
+
+</script>
+
+<body>
+<!-- BEGIN wrapper -->
+<div id="wrapper">
+  <!-- BEGIN header -->
+  
+
+
+
+<div id="header">
+    <ul>
+      <li></li>
+    </ul>
+<p>&nbsp;</p>
+    <table width="930" border="0" align="center" cellspacing="1">
+      <tr>
+        
+
+
+
+<p id="cabeza">EVALUACIÓN DEL RECURSO SUELO</p>
+<p ><b>Procesos formadores del suelo</b></p>
+<img src="imagen_encabezado.jpg"><!-- End WOWSlider.com BODY section -->
+
+<th width="919" scope="col">
+
+</th>
+</tr>
+    </table>
+
+   
+    <div class="break"></div>
+   
+    <div class="ad498x60"></div>
+    <div class="break"></div>
+   
+    <div class="break"></div>
+
+  </div>
+  <!-- END header -->
+  <!-- BEGIN content -->
+
+ <div id="izquierdo">
+   <!-- begin ads -->
+<ul>
+ <li><b>Contenido</b></li>
+      <li><a href="index.html">Inicio</a></li>
+<li><a href="introduccion.html">Introducción</a></li>
+<li><a href="definicion.html">Definicion de suelos</a></li>
+      <li><a href="ecosistema.html">Funciones de los suelos en el ecosistema</a></li>
+      <li><a href="unidades.html">Unidades de estudios de los suelos</a></li>
+      <li><a href="composicion.html">Composición del suelo</a></li>
+     
+<li><a href="factores.html">Factores formadores del suelo</a></li>
+      <li><span class="actual">Procesos formadores del suelo</span>
+<p><div id="cambio1">- Adiciones </div></p>
+ 
+       <p> <div id="cambio2">- Pérdidas </div></p>
+
+<p> <div id="cambio3">- Transformaciones</div></p>
+ <p> <div id="cambio4">- Translocaciones </div></p>
+
+
+
+</li>
+      
+<li><a href="caracteristicas.html">Características del suelo</a></li>
+<li><a href="Prueba.html">Prueba</a></li>
+ <li><a href="analisis.html">Datos</a></li>
+
+
+
+
+     
+    </ul>
+
+    <div class="ads">
+
+</div>
+   
+  </div>  <!-- END izquierdo -->
+
+
+
+
+
+  <div id="content">
+<div id="post">
+<br>
+<h2>Procesos formadores del suelo</h2>
+<p>Durante su formación, en el suelo ocurren entradas y salidas, movimientos y  trasformaciones de materiales y energía. A estos eventos se le denomina procesos formadores del suelo. Los principales procesos formadores del suelo son:
+
+</p>
+
+<div id="galeria">
+<div id="numero_foto">
+
+<p><boton1> </boton1></p>
+ 
+       <p> <boton2> </boton2></p>
+
+<p> <boton3></boton3></p>
+ <p> <boton4> </boton4></p>
+<p><boton5></boton5></p>
+     <p>   <boton6> </boton6></p>
+
+
+</div>
+
+
+
+
+<div id="noticia">
+
+</div>
+<div id="noticia1">
+<h2>Adiciones</h2>
+<p>
+Son entradas de materiales y energía al pedón. Ejemplos de adiciones son la entrada de agua de las lluvias o el riego, de radiación emitida por el sol, de sedimentos proveniente de la erosión de suelos aledaños o bien de fertilizantes
+
+</p>
+
+<img  src='adiciones.jpg'  id="imagen_noticia3" alt=''/>
+
+
+
+</div>
+
+<div id="noticia2">
+<h2>Pérdidas</h2>
+<p>
+Son salidas de materiales y energía del pedón. Ejemplos de pérdidas son la erosión, la evaporación del agua y la emisión de calor a la atmósfera o su transferencia a suelos aledaños
+
+
+</p>
+<img  src='perdidas.jpg'  id="imagen_noticia3" alt=''/>
+
+
+</div>
+
+<div id="noticia3">
+<h2>Transformaciones</h2>
+<p>
+
+Son transformaciones de la materia, cambios o reacciones químicas que ocurren dentro del pedón. Ejemplos de ello son las reacciones transformaciones de la materia, de formación de humus, arcillas,  la oxidación, reducción, hidratación y precipitación de compuestos entre otros.
+
+
+</p>
+<img  src='transformaciones.jpg'  id="imagen_noticia3" alt=''/>
+
+
+
+</div>
+<div id="noticia4">
+<h2>Translocaciones</h2>
+<p>
+Son movimientos de materiales de un lugar a otro, u horizonte a otro, en setido descendente o ascendente dentro del pedón. Sin salir de él. Ejemplos de ello son la eluviación e iluviación de arcillas, o el lavado de compuestos solubles del horizonte A al B y visceversa.
+
+
+</p>
+<img  src='translocaciones.jpg'  id="imagen_noticia3" alt=''/>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+<mover>
+<ul>
+ <li><div id="retroceder">&laquo;</div></li><li><div id="seguir">&raquo;</div></li>
+<ul>
+</mover>
+<br>
+<br>
+</div>
+<br>
+<br>
+
+
+
+
+
+
+
+
+ 
+
+   
+ 
+<div class="ads"> </div>
+    <!-- end post -->
+
+
+    
+    <!-- begin post -->
+    <div class="post">
+      
+
+<!-- Start WOWSlider.com BODY section id=wowslider-container2 --><script type="text/javascript" src="engine2//wowslider.js"></script>
+	<script type="text/javascript" src="engine2//script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+
+
+<!-- Start WOWSlider.com BODY section id=wowslider-container2 -->
+	
+	<script type="text/javascript" src="engine2//wowslider.js"></script>
+	<script type="text/javascript" src="engine2//script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+    </div>
+ <div class="ads"></div>
+    <p><!-- end post -->
+      <!-- begin post -->
+    </p>
+    
+  
+    
+    
+    
+   
+    
+    <!-- begin post navigation -->
+    <div class="postnav">
+
+
+      <ul>
+
+        
+
+
+
+        <li><a href="factores.html">&laquo;</a></li>
+<li><a href="caracteristicas.html">&raquo;</a></li>
+      </ul>
+
+      <div class="break"></div>
+    </div>    <!-- end post navigation -->
+  </div>
+  <!-- END content -->
+  <!-- BEGIN sidebar -->
+  <div id="sidebar">
+   <!-- begin ads -->
+<br>
+
+<br>
+
+    <div class="ads">
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+</div>
+    <!-- end ads -->
+    <!-- begin search -->
+   
+    <!-- end search -->
+    <div class="wrapper">
+      <!-- begin popular posts -->
+      &nbsp;
+      <!-- end popular posts -->
+      <!-- begin flickr photos -->
+     
+      <div class="flickr"> <section> 
+<p><b>Preguntas</b></p>
+<div id="pregunta1"><p></p></div>
+
+<br>
+<div id="pregunta2"><p></p></div>
+
+
+
+</section>
+
+<br>
+
+
+
+</div>
+      <!-- end flickr photos -->
+      <!-- begin featured video -->
+      
+      <div class="video"> &nbsp; </div>
+      <!-- end featured video -->
+      <!-- begin tags -->
+      
+      <div class="tags"> </div>
+      <!-- end tags -->
+      <!-- BEGIN left -->
+      <div class="l sbar">
+        <!-- begin categories -->
+        &nbsp;
+        <!-- end categories -->
+        <!-- begin pages -->
+        &nbsp;
+        <!-- end pages -->
+      </div>
+      <!-- END left -->
+      <!-- BEGIN right -->
+      <div class="r sbar">
+        <!-- begin archives -->
+        <h2>&nbsp;</h2>
+        &nbsp;
+        <!-- end archives -->
+        <!-- begin blogroll -->
+        &nbsp;
+        <!-- end blogroll -->
+        <!-- begin meta -->
+       
+        <!-- end meta -->
+ 
+      </div>
+      <!-- END right -->
+    </div>
+  <div class="ads"> &nbsp;</div>
+  </div>  <!-- END sidebar -->
+
+  <!-- BEGIN footer -->
+  <div id="footer">
+   
+    
+  </div>
+  <!-- END footer -->
+</div>
+<!-- END wrapper -->
+<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
+</html>

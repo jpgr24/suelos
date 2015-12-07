@@ -1,0 +1,68 @@
+<suelo>
+<tipo>
+<nombre>Gelisols</nombre>
+<descripcion>Presencia de permafrost o capa de hielo permanente en los primero 100 cm del suelo o presencia de fragmentos congelados en los primeros 100 cm de suelo y de permafrost dentro de los primeros 200 cm </descripcion>
+<cant_imagen>2</cant_imagen>
+</tipo>
+<tipo>
+<nombre>Histosols</nombre>
+<descripcion>Suelos compuestos de materiales organicos y al menos 30-40% de materia organica por peso en 40 cm de grosor de la capa organica</descripcion>
+<cant_imagen>2</cant_imagen>
+</tipo>
+<tipo>
+<nombre>Spodosols</nombre>
+<descripcion>Presentan un horizonte spodico en los 2 primeros metros de profundidad </descripcion>
+<cant_imagen>2</cant_imagen>
+</tipo>
+<tipo>
+<nombre>Andosols</nombre>
+<descripcion>Suelos formados por cenizas volcanicas y las arcillas cristalinas tienen una alta capacidad de retencion de agua y fosforo (alofano, imogolita y ferrihidrita) </descripcion>
+<cant_imagen>4</cant_imagen>
+</tipo>
+<tipo>
+<nombre>Oxisols</nombre>
+<descripcion>Presentan un horizonte oxico en los dos primeros metros de profundidad y sin horizonte argilico y son suelos altamente meteorizados, pH acido, ricos en oxidos de hierro y aluminio, y arcillas con baja actividad (p.e. caolinita, kandita)
+</descripcion>
+<cant_imagen>2</cant_imagen>
+</tipo>
+<tipo>
+<nombre>Vertisols</nombre>
+<descripcion>Suelos con un contenido de arcillas > al 30% en todos los horizontes. Generalmente son arcillas expansibles que se agrietan en ausencia de humedad y se generan grietas hasta de un cm de grosor y 50 cm de profundidad
+</descripcion>
+<cant_imagen>2</cant_imagen>
+</tipo>
+<tipo>
+<nombre>Aridisols</nombre>
+<descripcion>Suelos de zonas aridas (Mas de 90 dias acumulados con humedad en el suelo) y no tienen horizonte molico</descripcion>
+<cant_imagen>2</cant_imagen>
+</tipo>
+<tipo>
+<nombre>Ultisols</nombre>
+<descripcion>Presentan un horizonte argilico y el PSB es menor de 35% a hasta una profundidad de 1,8 m</descripcion>
+<cant_imagen>3</cant_imagen>
+</tipo>
+<tipo>
+<nombre>Mollisols</nombre>
+<descripcion>Presenta un horizonte molico y el Porcentaje Saturacion de Bases en todos los horizontes hasta 1,5 m es > 50%
+ </descripcion>
+<cant_imagen>3</cant_imagen>
+</tipo>
+<tipo>
+<nombre>Alfisols</nombre>
+<descripcion>Presentan un horizonte argilico y el porcentaje de saturacion de bases > 35%</descripcion>
+<cant_imagen>3</cant_imagen>
+</tipo>
+<tipo>
+<nombre>Inceptisols</nombre>
+<descripcion>Otros suelos que tienen un epipedon umbrico, molico o plaggen, o un horizonte cambico </descripcion>
+<cant_imagen>3</cant_imagen>
+</tipo>
+<tipo>
+<nombre>Entisols</nombre>
+<descripcion>Otros suelos que no cumplen con las caracteristicas de los suelos anteriormente descritos. Por lo general, son los suelos poco desarrollados, con un horizonte A y un horizonte C, o bien un horizonte b cuyo limite inferior se encuentra dentro de los primeros 25 cm de suelo  </descripcion>
+<cant_imagen>3</cant_imagen>
+</tipo>
+
+
+
+</suelo>

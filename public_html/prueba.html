@@ -1,0 +1,1838 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Evaluación del recurso suelo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="ie.css" /><![endif]-->
+
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" media="screen" />
+	
+	
+    
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" media="screen" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine2//style.css" media="screen" />
+	<script type="text/javascript" src="engine2//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine2//style.css" media="screen" />
+	<script type="text/javascript" src="engine2//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine3//style.css" media="screen" />
+	<script type="text/javascript" src="engine3//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine4//style.css" media="screen" />
+	<script type="text/javascript" src="engine4//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+</head>
+
+<script src="los_script.js" > 
+
+
+
+</script>
+<script src="jquery-1.6.2.min.js">
+</script>
+
+<script>
+
+
+
+
+numero=new Array();
+long=3;
+z=1;
+actual=1;
+t=64;
+
+pregunta=[];
+respuesta=[];
+adyacente1=[];
+adyacente2=[];
+adyacente3=[];
+
+for(i=0;i<t;i++){
+ j=3*i;
+ adyacente1[i]=j+64;
+
+ adyacente2[i]=j+65;
+
+ adyacente3[i]=j+66;
+}
+
+
+pregunta[0]="¿Qué es el suelo?";
+respuesta[0]="Un cuerpo natural o modificado por el hombre";
+pregunta[1]="¿El suelo limita arriba con? ";
+respuesta[1]="La atmósfera o una lámina de aguas somera";
+pregunta[2]="¿La producción biológica es? ";
+respuesta[2]="Una función del suelo relacionada con la producción de materia orgánica";
+pregunta[3]="La función del suelo relacionada con la estabilización, degradación o transformación de desechos se le denomina? ";
+respuesta[3]="Filtro ambiental";
+pregunta[4]="¿Cómo se denomina la función del suelo relacionada con la reserva de semillas y propágulos para la recuperación de la vegetación en áreas afectadas por las actividades humanas y eventos naturales? ";
+respuesta[4]="Banco de semillas";
+pregunta[5]="¿El concepto de polipedón se refiere a?  ";
+respuesta[5]="Un conjunto de pedones que conforman un individuo suelo";
+pregunta[6]="¿El perfil del suelo es?  ";
+respuesta[6]="En un corte del suelo, en dos dimensiones, que se extiende desde la superficie del suelo hasta el material parental y permite visualizar y estudiar las características del suelo.";
+pregunta[7]="¿El material parental es? ";
+respuesta[7]="La roca o sedimentos de donde se origina el suelo";
+pregunta[8]="¿El horizonte O se define como? ";
+respuesta[8]="Un horizonte superficial constituido por restos de plantas total o parcialmente descompuestas";
+pregunta[9]="¿Cómo se define al pedón?: ";
+respuesta[9]="Un volumen de suelo constituido por los diferentes horizontes que lo componen";
+pregunta[10]="¿Cuál factor formador del suelo acelera a través de la temperatura y la precipitación la meteorización del material parental? ";
+respuesta[10]="El clima";
+pregunta[11]="¿El horizonte B es conocido también como horizonte de? ";
+respuesta[11]="Eluviación";
+pregunta[12]="¿El horizonte B concentra arcillas y compuestos solubles provenientes principalmente? ";
+respuesta[12]="Del horizonte A";
+pregunta[13]="¿El horizonte A es conocido también como el horizonte? ";
+respuesta[13]="De iluviación";
+pregunta[14]="¿Los factores formadores del suelo son? ";
+respuesta[14]="Clima, organismos, material parental, relieve y tiempo";
+pregunta[15]="¿El proceso formador de suelos que se caracteriza por la ganancia de materia y energía del pedón, se denomina? ";
+respuesta[15]="Adición";
+pregunta[16]="¿La función del suelo relacionada con la degradación, transformación y estabilización de contaminantes se denomina? ";
+respuesta[16]="Filtro ambiental";
+pregunta[17]="¿Los horizontes del suelo son? ";
+respuesta[17]="Son capas horizontales que conforman el perfil del suelo y que se diferencian por su color y otras características";
+pregunta[18]="¿Se considera al suelo un cuerpo heterogéneo, ya que? ";
+respuesta[18]="Está constituido por una fase sólida, una fase líquida y una gaseosa y además presenta horizontes con diferentes características";
+pregunta[19]="¿El horizonte A se define como? ";
+respuesta[19]="El horizonte mineral más superficial con mayor contenido de materia orgánica y colores más oscuros, así como mayor lavado de arcillas y compuestos solubles.";
+pregunta[20]="¿El horizonte debajo del horizonte A, de colores más claros y que concentra las arcillas y compuestos solubles lavados del horizonte A. Se le conoce también como horizonte ";
+respuesta[20]="B";
+pregunta[21]="¿El horizonte mineral que contiene restos del material parental y de material meteorizado, se conoce como ";
+respuesta[21]="C";
+pregunta[22]="¿Con cuál letra se denomina al material parental?  ";
+respuesta[22]="R";
+pregunta[23]="¿El suelo está compuesto por diferentes fases de?  ";
+respuesta[23]="La materia";
+pregunta[24]="¿Dentro de los componentes del aire del suelo se encuentran?:";
+respuesta[24]="Oxígeno, vapor de agua y dióxido de carbono";
+pregunta[25]="¿Como se denomina a la fase del suelo que facilita la disolución y movilidad de los nutrientes, así como la hidratación de la biota del suelo, incluyendo las raíces?";
+respuesta[25]="Agua del suelo";
+pregunta[26]="¿Las rocas meteorizadas, minerales primarios y secundarios del suelo forman parte de la fase?";
+respuesta[26]="Mineral";
+pregunta[27]="¿La fase mineral se compone por? ";
+respuesta[27]="Rocas meteorizadas, minerales primarios y secundarios";
+pregunta[28]="¿Los restos de plantas y animales del suelo conforman la fase?";
+respuesta[28]="Orgánica";
+pregunta[29]="¿Cuál factor formador aporta materia orgánica al suelo y favorecen la formación de poros?";
+respuesta[29]="Los organismos";
+pregunta[30]="¿Cuál factor formador está relacionado con las rocas y minerales que constituyen un suelo?";
+respuesta[30]="El material parental";
+pregunta[31]="¿Cuál de los procesos que abajo se mencionan son favorecidos por las altas temperaturas y precipitaciones?";
+respuesta[31]="La meteorización, la descomposición de la materia orgánica, el lavado de los compuestos solubles del perfil del suelo";
+pregunta[32]="¿Los procesos formadores del suelo son?";
+respuesta[32]="Adición, pérdida, transformación y translocación";
+pregunta[33]="¿Cómo se llama el proceso formador del suelo que es entrada de materiales y energía?";
+respuesta[33]="Adicion";
+pregunta[34]="¿A cuál proceso formador  del suelo corresponde la entrada de agua al pedón? ";
+respuesta[34]="Adicion";
+pregunta[35]="¿A cuál proceso formador corresponde la emisión de calor por parte del suelo? ";
+respuesta[35]="Pérdida";
+pregunta[36]="¿A cuál proceso formador corresponde la erosión del suelo? ";
+respuesta[36]="Pérdida";
+pregunta[37]="¿A cuál proceso formador corresponde la evaporación del agua del suelo? ";
+respuesta[37]="Pérdida";
+pregunta[38]="¿A cuál proceso formador corresponde la descomposición de la materia orgánica y la formación de humus en el suelo? ";
+respuesta[38]="Transformación";
+pregunta[39]="¿A cuál proceso formador corresponde la transformación de la materia dentro del suelo? ";
+respuesta[39]="Transformación";
+pregunta[40]="¿A cuál proceso formador corresponde la oxidación, hidratación y precipitación de compuestos dentro del suelo? ";
+respuesta[40]="Transformacion";
+pregunta[41]="¿A cuál proceso formador corresponde el movimiento de materia y/o energía dentro del pedón?";
+respuesta[41]="Traslocación";
+pregunta[42]="Ejemplos de translocacion";
+respuesta[42]="La eluviación de arcillas, la iluviación de arcillas, el lavado de compuestos solubles del horizonte A al B y visceversa";
+pregunta[43]="¿Cómo se denomina al conjunto de características del suelo relacionadas con el clima? ";
+respuesta[43]="Pedoclimáticas";
+pregunta[44]="¿El régimen de temperatura del suelo es una característica? ";
+respuesta[44]="Pedoclimática";
+pregunta[45]="¿Qué característica del suelo está relacionada con el clima?";
+respuesta[45]="Pedoclimatica";
+pregunta[46]="¿La ubicación del pedón en el paisaje geográfico es una característica?";
+respuesta[46]="Posicional";
+pregunta[47]="¿El tipo de relieve en donde se desarrolla un suelo es una característica?";
+respuesta[47]="Posicional";
+pregunta[48]="¿La susceptibilidad a la erosión de un suelo  es una característica?";
+respuesta[48]="Posicional";
+pregunta[49]="¿El drenaje del suelo es una característica? ";
+respuesta[49]="Posicional";
+pregunta[50]="¿El conjunto de características del suelo que puede ser evaluada en el campo directamente, estudiando los perfiles, se les denomina? ";
+respuesta[50]="Morfológica";
+pregunta[51]="¿La profundidad del suelo es una característica?";
+respuesta[51]="Morfológica";
+pregunta[52]="¿El número y tipo de horizontes es una característica? ";
+respuesta[52]="Morfológica";
+pregunta[53]="¿El color es una característica? ";
+respuesta[53]="Morfológica";
+pregunta[54]="¿La presencia de grietas y poros es una característica";
+respuesta[54]="Morfológica";
+pregunta[55]="¿Aquellas característica de los suelos que se evalúan en los laboratorios se les denominan? ";
+respuesta[55]="Composicionales";
+pregunta[56]="¿El contenido de nutrientes de un suelo es una característica?";
+respuesta[56]="Composicional";
+pregunta[57]="¿Una característica composicional es aquella que?";
+respuesta[57]="Se evalúa en el laboratorio";
+pregunta[58]="¿La textura del suelo es una característica? ";
+respuesta[58]="Composicional";
+pregunta[59]="¿El tipo de arcilla es una característica? ";
+respuesta[59]="Composicional";
+pregunta[60]="¿Ejemplos de características posicionales son";
+respuesta[60]="El tipo de material parental, el relieve, la susceptibilidad a la erosión y el drenaje";
+pregunta[61]="¿Los tipos de microorganismos presentes en un suelo corresponden a una característica? ";
+respuesta[61]="Composicional";
+pregunta[62]="¿Ejemplos de las características composicionales son";
+respuesta[62]="El pH, el contenido de nutrientes, la textura, el tipo de arcillas y los  microorganismos del suelo";
+pregunta[63]="¿La erosión es influenciada por ";
+respuesta[63]="La forma e inclinación del terreno, la intensidad de las precipitaciones y la densidad de la cobertura vegetal";
+respuesta[64]="Un cuerpo natural producto de  procesos naturales";
+respuesta[65]="Un cuerpo natural modificado por el hombre";
+respuesta[66]="Un cuerpo artificial modificado por la naturaleza ";
+respuesta[67]="El horizonte A";
+respuesta[68]="El horizonte O";
+respuesta[69]="El horizonte R";
+respuesta[70]="Una función del suelo como hábitat de la fauna";
+respuesta[71]="Una función del suelo como filtro ambiental";
+respuesta[72]="De eluviacion";
+respuesta[73]="Producción biológica";
+respuesta[74]="Banco de semillas";
+respuesta[75]="Ciclaje de nutrimentos y descomposición de materia orgánica";
+respuesta[76]="Producción biológica ";
+respuesta[77]="Filtro ambiental";
+respuesta[78]="Ciclaje de nutrimentos y descomposición de materia orgánica";
+respuesta[79]="Un corte del suelo, en dos dimensiones, que se extiende desde su superficie hasta el material parental  ";
+respuesta[80]="Un hueco o zanja en el suelo que permite su estudio";
+respuesta[81]="El conjunto de horizontes del suelo";
+respuesta[82]="Es un volumen de suelo que se extiende desde la superficie del suelo hasta el material parental y permite visualizar y estudiar las características del suelo  ";
+respuesta[83]="Es una calicata que se extiende desde la superficie del suelo hasta el material parental y permite visualizar y estudiar las características del suelo";
+respuesta[84]="Es una zanja que se extiende desde la superficie del suelo hasta el material parental y permite visualizar y estudiar las características del suelo";
+respuesta[85]="Un proceso formador del suelo";
+respuesta[86]="El perfil del suelo ";
+respuesta[87]="Un horizonte del suelo";
+respuesta[88]="Un horizonte mineral superficial rico en materia orgánica";
+respuesta[89]="Un horizonte orgánico subsuperficial ";
+respuesta[90]="Un horizonte de acumulación de organismos vivos";
+respuesta[91]="Una calicata o zanja que permite el estudio del suelo";
+respuesta[92]="Un perfil del suelo";
+respuesta[93]="Un conjunto de perfiles representativos del suelo";
+respuesta[94]="La atmósfera";
+respuesta[95]="El hielo";
+respuesta[96]="Los organismos del suelo";
+respuesta[97]="Iluviación";
+respuesta[98]="Transformación";
+respuesta[99]="Translocación";
+respuesta[100]="De las lluvias";
+respuesta[101]="Del horizonte C";
+respuesta[102]="Del material parental";
+respuesta[103]="De fragmentación";
+respuesta[104]="De descomposición";
+respuesta[105]="De acumulación";
+respuesta[106]="Adición, pérdida, transformación y translocación";
+respuesta[107]="Tiempo, transformación y translocación";
+respuesta[108]="Clima, organismos, material parental, relieve, translocación y transformación";
+respuesta[109]="Acumulación";
+respuesta[110]="Transformación";
+respuesta[111]="Translocación";
+respuesta[112]="Descomposición de materia orgánica y ciclaje de nutrientes";
+respuesta[113]="Pedogénesis";
+respuesta[114]="Producción biológica";
+respuesta[115]="Son capas del suelo que se diferencian exclusivamente por su color";
+respuesta[116]="Son las dimensiones (grosor y ubicación) de las diferentes componentes del perfil del suelo";
+respuesta[117]="Son arreglos de los estratos del suelo de acuerdo al contenido de partículas";
+respuesta[118]="Ocurren procesos complejos en su formación";
+respuesta[119]="No existen dos suelos similares en ninguna parte del mundo";
+respuesta[120]="Es difícil su  estudio";
+respuesta[121]="El horizonte orgánico más superficial con mayor contenido de materia orgánica y colores más oscuros, así como mayor lavado de arcillas y compuestos solubles";
+respuesta[122]="El horizonte mineral más superficial con mayor contenido de materia orgánica y colores más oscuros, así como menor lavado de arcillas y compuestos solubles";
+respuesta[123]="El horizonte mineral más profundo con mayor contenido de materia orgánica y colores más oscuros, así como mayor lavado de arcillas y compuestos solubles";
+respuesta[124]="A";
+respuesta[125]="C";
+respuesta[126]="E";
+respuesta[127]="A";
+respuesta[128]="B";
+respuesta[129]="E";
+respuesta[130]="B";
+respuesta[131]="A";
+respuesta[132]="E";
+respuesta[133]="Campo";
+respuesta[134]="Rocas";
+respuesta[135]="Horizontes";
+respuesta[136]="Plomo, uranio y potasio";
+respuesta[137]="Dióxido de carbono, oxígeno y nitrógeno";
+respuesta[138]="Vapor de agua, dióxido de carbono y cloro";
+respuesta[139]="Solución";
+respuesta[140]="Suspensión";
+respuesta[141]="Medio";
+respuesta[142]="Acuosa";
+respuesta[143]="Gaseosa";
+respuesta[144]="Líquida";
+respuesta[145]="Rocas y plantas";
+respuesta[146]="Minerales primarios y secundarios y agua";
+respuesta[147]="Materia orgánica y rocas";
+respuesta[148]="Líquida";
+respuesta[149]="Mineral";
+respuesta[150]="Acuosa";
+respuesta[151]="El clima";
+respuesta[152]="La precipitación";
+respuesta[153]="La erosión";
+respuesta[154]="El clima";
+respuesta[155]="La meteorización";
+respuesta[156]="La erosión";
+respuesta[157]="La transformación, adición, pérdida y translocación";
+respuesta[158]="La erosión y meteorización";
+respuesta[159]="La descomposición de materia y la adición";
+respuesta[160]="Clima, material parental, relieve, organismos y tiempo";
+respuesta[161]="Clima, relieve, transformación y translocación";
+respuesta[162]="Adición, pérdida, relieve, organismos y tiempo";
+respuesta[163]="Deposición";
+respuesta[164]="Translocación";
+respuesta[165]="Iluviación";
+respuesta[166]="Clima";
+respuesta[167]="Eluviación";
+respuesta[168]="Disolución";
+respuesta[169]="Adición";
+respuesta[170]="Translocacion";
+respuesta[171]="Transformación";
+respuesta[172]="Adición";
+respuesta[173]="Translocacion";
+respuesta[174]="Transformación";
+respuesta[175]="Adición";
+respuesta[176]="Translocacion";
+respuesta[177]="Transformación";
+respuesta[178]="Adición";
+respuesta[179]="Translocacion";
+respuesta[180]="Pérdida";
+respuesta[181]="Adición";
+respuesta[182]="Translocacion";
+respuesta[183]="Pérdida";
+respuesta[184]="Adición";
+respuesta[185]="Translocacion";
+respuesta[186]="Pérdida";
+respuesta[187]="Adición";
+respuesta[188]="Transformación";
+respuesta[189]="Pérdida";
+respuesta[190]="Erosión y emisión de calor y evaporación del agua";
+respuesta[191]="Hidratación y oxidación de compuestos de compuestos";
+respuesta[192]="Entrada de lluvia y calor";
+respuesta[193]="Precipitación y temperatura";
+respuesta[194]="Meteorológicas";
+respuesta[195]="Composicionales";
+respuesta[196]="Posicional";
+respuesta[197]="Morfológica";
+respuesta[198]="Composicional";
+respuesta[199]="Posicional";
+respuesta[200]="Morfológica";
+respuesta[201]="Composicional";
+respuesta[202]="Pedoclimática";
+respuesta[203]="Morfológica";
+respuesta[204]="Composicional";
+respuesta[205]="Pedoclimática";
+respuesta[206]="Morfológica";
+respuesta[207]="Composicional";
+respuesta[208]="Pedoclimática";
+respuesta[209]="Morfológica";
+respuesta[210]="Composicional";
+respuesta[211]="Pedoclimática";
+respuesta[212]="morfológica";
+respuesta[213]="Composicional";
+respuesta[214]="Pedoclimática";
+respuesta[215]="Posicional";
+respuesta[216]="Composicional";
+respuesta[217]="Pedoclimática";
+respuesta[218]="Posicional";
+respuesta[219]="Composicional";
+respuesta[220]="Pedoclimática";
+respuesta[221]="Posicional";
+respuesta[222]="Composicional";
+respuesta[223]="Pedoclimática";
+respuesta[224]="Posicional";
+respuesta[225]="Composicional";
+respuesta[226]="Pedoclimática";
+respuesta[227]="Posicional";
+respuesta[228]="Composicional";
+respuesta[229]="Pedoclimática";
+respuesta[230]="Posicional";
+respuesta[231]="Morfológica";
+respuesta[232]="Pedoclimática";
+respuesta[233]="Posicional";
+respuesta[234]="Morfológica";
+respuesta[235]="Se evalúa en el campo";
+respuesta[236]="Se relaciona con la posición del pedón en el espacio geográfico";
+respuesta[237]="Se relaciona con el tiempo";
+respuesta[238]="Pedoclimática";
+respuesta[239]="Posicional";
+respuesta[240]="Morfológica";
+respuesta[241]="Pedoclimática";
+respuesta[242]="Posicional";
+respuesta[243]="Morfológica";
+respuesta[244]="pH, color, contenido de nutrientes, actividad microbiana";
+respuesta[245]="Régimen de humedad y régimen de temperatura";
+respuesta[246]="Profundidad, color, espesor de los horizontes, ubicación en el paisaje";
+respuesta[247]="Pedoclimática";
+respuesta[248]="Posicional";
+respuesta[249]="Morfológica";
+respuesta[250]="El color, la profundidad, la estructura y la presencia de grietas";
+respuesta[251]="La posición en el paisaje geográfico, el relieve, el drenaje , el tipo de material parental";
+respuesta[252]="El régimen de temperatura y el régimen de humedad";
+respuesta[253]="El color, la profundidad, la estructura y la presencia de grietas";
+respuesta[254]="La posición en el paisaje geográfico, el relieve, el drenaje , el tipo de material parental";
+respuesta[255]="El régimen de temperatura y el régimen de humedad";
+
+
+i=0;
+//t=aleatorio(67);
+A=[];
+
+
+acum=0;
+
+total_pregunta=13;
+//sex.value='a';
+//document.examen.sex.value="b";
+
+
+/**
+**/
+
+
+
+cantidad_total=64;
+cantidad_ordenar=20;
+cantidad_pregunta_anterior=0;
+
+
+
+ordenar_seleccion_aleatorio(A, cantidad_total,cantidad_ordenar);
+
+
+crr=[];
+
+
+
+$(document).ready(function(){
+cambios(/**z,actual,long, ubicacion,leyenda,ima**/);
+
+p1=A[0];
+p2=A[1];
+p3=A[2];
+p4=A[3];
+p5=A[4];
+p6=A[5];
+p7=A[6];
+p8=A[7];
+p9=A[8];
+p10=A[9];
+p11=A[10];
+p12=A[11];
+p13=A[12];
+p14=A[13];
+p15=A[14];
+p16=A[15];
+p17=A[16];
+p18=A[17];
+p19=A[18];
+p20=A[19];
+
+
+//as=preguntas_seleccion(pregunta, respuesta,cantidad_total,p1,0);
+//as=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p1,0,adyacente1[p1], adyacente2[p1], adyacente3[p1]);
+//as=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,66,0,adyacente1, adyacente2, adyacente3);
+as=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p1,0, adyacente1 ,adyacente2, adyacente3);
+crr[0]=as;
+crr[1]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p2,1, adyacente1 ,adyacente2, adyacente3);
+crr[2]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p3,2,adyacente1 ,adyacente2, adyacente3);
+crr[3]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p4,3,adyacente1 ,adyacente2, adyacente3);
+crr[4]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p5,4,adyacente1 ,adyacente2, adyacente3);
+crr[5]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p6,5,adyacente1 ,adyacente2, adyacente3);
+crr[6]=preguntas_seleccion_prueba(pregunta,respuesta,cantidad_total,p7,6,adyacente1 ,adyacente2, adyacente3);
+crr[7]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p8,7,adyacente1 ,adyacente2, adyacente3);
+crr[8]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p9,8,adyacente1 ,adyacente2, adyacente3);
+crr[9]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p10,9,adyacente1 ,adyacente2, adyacente3);
+crr[10]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p11,10,adyacente1 ,adyacente2, adyacente3);
+crr[11]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p12,11,adyacente1 ,adyacente2, adyacente3);
+crr[12]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p13,12,adyacente1,adyacente2, adyacente3);
+crr[13]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p14,13,adyacente1 ,adyacente2, adyacente3);
+crr[14]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p15,14,adyacente1 ,adyacente2, adyacente3);
+crr[15]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p16,15,adyacente1 ,adyacente2, adyacente3);
+crr[16]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p17,16,adyacente1 ,adyacente2, adyacente3);
+crr[17]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p18,17,adyacente1 ,adyacente2, adyacente3);
+crr[18]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p19,18,adyacente1 ,adyacente2, adyacente3);
+crr[19]=preguntas_seleccion_prueba(pregunta, respuesta,cantidad_total,p20,19,adyacente1 ,adyacente2, adyacente3);
+
+punto=0;
+
+
+$("#prueba").click(function(){
+$(this).hide();
+//completa=correccion(13,A,respuesta);
+
+p=corregir_seleccion(0,document.examen.simple1.value,crr);
+punto=punto+p;
+p=corregir_seleccion(1,document.examen.simple2.value,crr);
+punto=punto+p;
+p=corregir_seleccion(2,document.examen.simple3.value,crr);
+punto=punto+p;
+p=corregir_seleccion(3,document.examen.simple4.value,crr);
+punto=punto+p;
+p=corregir_seleccion(4,document.examen.simple5.value,crr);
+punto=punto+p;
+p=corregir_seleccion(5,document.examen.simple6.value,crr);
+punto=punto+p;
+p=corregir_seleccion(6,document.examen.simple7.value,crr);
+punto=punto+p;
+p=corregir_seleccion(7,document.examen.simple8.value,crr);
+punto=punto+p;
+p=corregir_seleccion(8,document.examen.simple9.value,crr);
+punto=punto+p;
+p=corregir_seleccion(9,document.examen.simple10.value,crr);
+punto=punto+p;
+p=corregir_seleccion(10,document.examen.simple11.value,crr);
+punto=punto+p;
+p=corregir_seleccion(11,document.examen.simple12.value,crr);
+punto=punto+p;
+p=corregir_seleccion(12,document.examen.simple13.value,crr);
+punto=punto+p;
+p=corregir_seleccion(13,document.examen.simple14.value,crr);
+punto=punto+p;
+p=corregir_seleccion(14,document.examen.simple15.value,crr);
+punto=punto+p;
+p=corregir_seleccion(15,document.examen.simple16.value,crr);
+punto=punto+p;
+p=corregir_seleccion(16,document.examen.simple17.value,crr);
+punto=punto+p;
+p=corregir_seleccion(17,document.examen.simple18.value,crr);
+punto=punto+p;
+p=corregir_seleccion(18,document.examen.simple19.value,crr);
+punto=punto+p;
+p=corregir_seleccion(19,document.examen.simple20.value,crr);
+punto=punto+p;
+
+//total=completa+punto;
+
+total_seleccion=20;
+
+puntaje_seleccion=punto+"/"+total_seleccion;
+incorrecta_seleccion=total_seleccion-punto;
+punto="Total respuestas correctas en la seleccion: "+puntaje_seleccion;
+incorrecta_seleccion="Total respuestas incorrectas en la seleccion: "+incorrecta_seleccion;
+incorrecta_seleccion=incorrecta_seleccion+"/";
+incorrecta_seleccion=incorrecta_seleccion+total_seleccion;
+$("#respuesta_correcta_de_sel").text(punto);
+$("#respuesta_incorrecta_de_sel").text(incorrecta_seleccion);
+//$("#puntaje_seleccion").text(punto);
+
+
+
+
+});
+
+
+//$("#noticia").html($("#noticia1").html());
+
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+</script>
+
+<body>
+<!-- BEGIN wrapper -->
+<div id="wrapper">
+  <!-- BEGIN header -->
+  
+
+
+
+<div id="header">
+    <ul>
+      <li></li>
+    </ul>
+<p>&nbsp;</p>
+    <table width="930" border="0" align="center" cellspacing="1">
+      <tr>
+        
+
+
+
+<p id="cabeza">EVALUACIÓN DEL RECURSO SUELO</p>
+<p><b>Examen</b></p>
+
+
+<img src="imagen_encabezado.jpg"><!-- End WOWSlider.com BODY section -->
+
+<th width="919" scope="col">
+
+</th>
+</tr>
+    </table>
+
+   
+    <div class="break"></div>
+   
+    <div class="ad498x60"></div>
+    <div class="break"></div>
+   
+    <div class="break"></div>
+
+  </div>
+  <!-- END header -->
+  <!-- BEGIN content -->
+
+ <div id="izquierdo">
+   <!-- begin ads -->
+<ul>
+ <li><b>Contenido</b></li>
+      <li><a href="index.html">Inicio</a></li>
+<li><a href="introduccion.html">Introducción</a></li>
+<li><a href="definicion.html">Definicion de suelos</a></li>
+      <li><a href="ecosistema.html">Funciones de los suelos en el ecosistema</a></li>
+      <li><a href="unidades.html">Unidades de estudios de los suelos</a></li>
+      <li><a href="composicion.html">Composición del suelo</a></li>
+     
+<li><a href="factores.html">Factores formadores del suelo</a></li>
+      <li><a href="formacion.html">Procesos formadores del suelo</a></li>
+      
+<li><a href="caracteristicas.html">Características del suelo</a></li>
+<li><span class="actual">Prueba</span></li>
+ <li><a href="analisis.html">Datos</a></li>
+
+
+
+
+     
+    </ul>
+
+    <div class="ads">
+
+</div>
+   
+  </div>  <!-- END izquierdo -->
+
+
+
+
+
+  <div id="content">
+<div id="post">
+<p>Responda con calma cada una de las preguntas que se le hace. Suerte!!!</p>
+
+</div>
+
+
+
+<section>
+<form name="examen">
+
+
+<section id="parteII">
+<p>Marque la respuesta correcta a la pregunta</p>
+<br>
+<p id="preg_sel1"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel1" name="simple1" >
+</td>
+<td>
+<div id="seleccion1"></div>
+</td>
+<td>
+<div id="correccion_seleccion1"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel2" name="simple1" >
+</td>
+<td>
+<div id="seleccion2"></div>
+</td>
+<td>
+<div id="correccion_seleccion2"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel3" name="simple1" >
+</td>
+<td>
+<div id="seleccion3"></div>
+</td>
+<td>
+<div id="correccion_seleccion3"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel4" name="simple1" >
+</td>
+<td>
+<div id="seleccion4"></div>
+</td>
+<td>
+<div id="correccion_seleccion4"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel2"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel5" name="simple2" >
+</td>
+<td>
+<div id="seleccion5"></div>
+</td>
+<td>
+<div id="correccion_seleccion5"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel6" name="simple2" >
+</td>
+<td>
+<div id="seleccion6"></div>
+</td>
+<td>
+<div id="correccion_seleccion6"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel7" name="simple2" >
+</td>
+<td>
+<div id="seleccion7"></div>
+</td>
+<td>
+<div id="correccion_seleccion7"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel8" name="simple2" >
+</td>
+<td>
+<div id="seleccion8"></div>
+</td>
+<td>
+<div id="correccion_seleccion8"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel3"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel9" name="simple3" >
+</td>
+<td>
+<div id="seleccion9"></div>
+</td>
+<td>
+<div id="correccion_seleccion9"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel10" name="simple3" >
+</td>
+<td>
+<div id="seleccion10"></div>
+</td>
+<td>
+<div id="correccion_seleccion10"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel11" name="simple3" >
+</td>
+<td>
+<div id="seleccion11"></div>
+</td>
+<td>
+<div id="correccion_seleccion11"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel12" name="simple3" >
+</td>
+<td>
+<div id="seleccion12"></div>
+</td>
+<td>
+<div id="correccion_seleccion12"></div>
+</td>
+</tr>
+
+</table>
+<br>
+
+<p id="preg_sel4"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel13" name="simple4" >
+</td>
+<td>
+<div id="seleccion13"></div>
+</td>
+<td>
+<div id="correccion_seleccion13"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel14" name="simple4" >
+</td>
+<td>
+<div id="seleccion14"></div>
+</td>
+<td>
+<div id="correccion_seleccion14"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel15" name="simple4" >
+</td>
+<td>
+<div id="seleccion15"></div>
+</td>
+<td>
+<div id="correccion_seleccion15"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel16" name="simple4" >
+</td>
+<td>
+<div id="seleccion16"></div>
+</td>
+<td>
+<div id="correccion_seleccion16"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel5"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel17" name="simple5" >
+</td>
+<td>
+<div id="seleccion17"></div>
+</td>
+<td>
+<div id="correccion_seleccion17"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel18" name="simple5" >
+</td>
+<td>
+<div id="seleccion18"></div>
+</td>
+<td>
+<div id="correccion_seleccion18"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel19" name="simple5" >
+</td>
+<td>
+<div id="seleccion19"></div>
+</td>
+<td>
+<div id="correccion_seleccion19"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel20" name="simple5" >
+</td>
+<td>
+<div id="seleccion20"></div>
+</td>
+<td>
+<div id="correccion_seleccion20"></div>
+</td>
+</tr>
+
+</table>
+
+<br>
+<p id="preg_sel6"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel21" name="simple6" >
+</td>
+<td>
+<div id="seleccion21"></div>
+</td>
+<td>
+<div id="correccion_seleccion21"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel22" name="simple6" >
+</td>
+<td>
+<div id="seleccion22"></div>
+</td>
+<td>
+<div id="correccion_seleccion22"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel23" name="simple6" >
+</td>
+<td>
+<div id="seleccion23"></div>
+</td>
+<td>
+<div id="correccion_seleccion23"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel24" name="simple6" >
+</td>
+<td>
+<div id="seleccion24"></div>
+</td>
+<td>
+<div id="correccion_seleccion24"></div>
+</td>
+</tr>
+
+</table>
+<br>
+
+<p id="preg_sel7"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel25" name="simple7" >
+</td>
+<td>
+<div id="seleccion25"></div>
+</td>
+<td>
+<div id="correccion_seleccion25"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel26" name="simple7" >
+</td>
+<td>
+<div id="seleccion26"></div>
+</td>
+<td>
+<div id="correccion_seleccion26"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel27" name="simple7" >
+</td>
+<td>
+<div id="seleccion27"></div>
+</td>
+<td>
+<div id="correccion_seleccion27"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel28" name="simple7" >
+</td>
+<td>
+<div id="seleccion28"></div>
+</td>
+<td>
+<div id="correccion_seleccion28"></div>
+</td>
+</tr>
+
+</table>
+<br>
+
+<p id="preg_sel8"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel29" name="simple8" >
+</td>
+<td>
+<div id="seleccion29"></div>
+</td>
+<td>
+<div id="correccion_seleccion29"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel30" name="simple8" >
+</td>
+<td>
+<div id="seleccion30"></div>
+</td>
+<td>
+<div id="correccion_seleccion30"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel31" name="simple8" >
+</td>
+<td>
+<div id="seleccion31"></div>
+</td>
+<td>
+<div id="correccion_seleccion31"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel32" name="simple8" >
+</td>
+<td>
+<div id="seleccion32"></div>
+</td>
+<td>
+<div id="correccion_seleccion32"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel9"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel33" name="simple9" >
+</td>
+<td>
+<div id="seleccion33"></div>
+</td>
+<td>
+<div id="correccion_seleccion33"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel34" name="simple9" >
+</td>
+<td>
+<div id="seleccion34"></div>
+</td>
+<td>
+<div id="correccion_seleccion34"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel35" name="simple9" >
+</td>
+<td>
+<div id="seleccion35"></div>
+</td>
+<td>
+<div id="correccion_seleccion35"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel36" name="simple9" >
+</td>
+<td>
+<div id="seleccion36"></div>
+</td>
+<td>
+<div id="correccion_seleccion36"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel10"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel37" name="simple10" >
+</td>
+<td>
+<div id="seleccion37"></div>
+</td>
+<td>
+<div id="correccion_seleccion37"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel38" name="simple10" >
+</td>
+<td>
+<div id="seleccion38"></div>
+</td>
+<td>
+<div id="correccion_seleccion38"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel39" name="simple10" >
+</td>
+<td>
+<div id="seleccion39"></div>
+</td>
+<td>
+<div id="correccion_seleccion39"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel40" name="simple10" >
+</td>
+<td>
+<div id="seleccion40"></div>
+</td>
+<td>
+<div id="correccion_seleccion40"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel11"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel41" name="simple11" >
+</td>
+<td>
+<div id="seleccion41"></div>
+</td>
+<td>
+<div id="correccion_seleccion41"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel42" name="simple11" >
+</td>
+<td>
+<div id="seleccion42"></div>
+</td>
+<td>
+<div id="correccion_seleccion42"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel43" name="simple11" >
+</td>
+<td>
+<div id="seleccion43"></div>
+</td>
+<td>
+<div id="correccion_seleccion43"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel44" name="simple11" >
+</td>
+<td>
+<div id="seleccion44"></div>
+</td>
+<td>
+<div id="correccion_seleccion44"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel12"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel45" name="simple12" >
+</td>
+<td>
+<div id="seleccion45"></div>
+</td>
+<td>
+<div id="correccion_seleccion45"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel46" name="simple12" >
+</td>
+<td>
+<div id="seleccion46"></div>
+</td>
+<td>
+<div id="correccion_seleccion46"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel47" name="simple12" >
+</td>
+<td>
+<div id="seleccion47"></div>
+</td>
+<td>
+<div id="correccion_seleccion47"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel48" name="simple12" >
+</td>
+<td>
+<div id="seleccion48"></div>
+</td>
+<td>
+<div id="correccion_seleccion48"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel13"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel49" name="simple13" >
+</td>
+<td>
+<div id="seleccion49"></div>
+</td>
+<td>
+<div id="correccion_seleccion49"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel50" name="simple13" >
+</td>
+<td>
+<div id="seleccion50"></div>
+</td>
+<td>
+<div id="correccion_seleccion50"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel51" name="simple13" >
+</td>
+<td>
+<div id="seleccion51"></div>
+</td>
+<td>
+<div id="correccion_seleccion51"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel52" name="simple13" >
+</td>
+<td>
+<div id="seleccion52"></div>
+</td>
+<td>
+<div id="correccion_seleccion52"></div>
+</td>
+</tr>
+</table>
+<br>
+<p id="preg_sel14"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel53" name="simple14" >
+</td>
+<td>
+<div id="seleccion53"></div>
+</td>
+<td>
+<div id="correccion_seleccion53"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel54" name="simple14" >
+</td>
+<td>
+<div id="seleccion54"></div>
+</td>
+<td>
+<div id="correccion_seleccion54"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel55" name="simple14" >
+</td>
+<td>
+<div id="seleccion55"></div>
+</td>
+<td>
+<div id="correccion_seleccion55"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel56" name="simple14" >
+</td>
+<td>
+<div id="seleccion56"></div>
+</td>
+<td>
+<div id="correccion_seleccion56"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel15"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel57" name="simple15" >
+</td>
+<td>
+<div id="seleccion57"></div>
+</td>
+<td>
+<div id="correccion_seleccion57"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel58" name="simple15" >
+</td>
+<td>
+<div id="seleccion58"></div>
+</td>
+<td>
+<div id="correccion_seleccion58"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel59" name="simple15" >
+</td>
+<td>
+<div id="seleccion59"></div>
+</td>
+<td>
+<div id="correccion_seleccion59"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel60" name="simple15" >
+</td>
+<td>
+<div id="seleccion60"></div>
+</td>
+<td>
+<div id="correccion_seleccion60"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel16"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel61" name="simple16" >
+</td>
+<td>
+<div id="seleccion61"></div>
+</td>
+<td>
+<div id="correccion_seleccion61"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel62" name="simple16" >
+</td>
+<td>
+<div id="seleccion62"></div>
+</td>
+<td>
+<div id="correccion_seleccion62"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel63" name="simple16" >
+</td>
+<td>
+<div id="seleccion63"></div>
+</td>
+<td>
+<div id="correccion_seleccion63"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel64" name="simple16" >
+</td>
+<td>
+<div id="seleccion64"></div>
+</td>
+<td>
+<div id="correccion_seleccion64"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel17"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel65" name="simple17" >
+</td>
+<td>
+<div id="seleccion65"></div>
+</td>
+<td>
+<div id="correccion_seleccion65"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel66" name="simple17" >
+</td>
+<td>
+<div id="seleccion66"></div>
+</td>
+<td>
+<div id="correccion_seleccion66"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel67" name="simple17" >
+</td>
+<td>
+<div id="seleccion67"></div>
+</td>
+<td>
+<div id="correccion_seleccion67"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel68" name="simple17" >
+</td>
+<td>
+<div id="seleccion68"></div>
+</td>
+<td>
+<div id="correccion_seleccion68"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel18"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel69" name="simple18" >
+</td>
+<td>
+<div id="seleccion69"></div>
+</td>
+<td>
+<div id="correccion_seleccion69"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel70" name="simple18" >
+</td>
+<td>
+<div id="seleccion70"></div>
+</td>
+<td>
+<div id="correccion_seleccion70"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel71" name="simple18" >
+</td>
+<td>
+<div id="seleccion71"></div>
+</td>
+<td>
+<div id="correccion_seleccion71"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel72" name="simple18" >
+</td>
+<td>
+<div id="seleccion72"></div>
+</td>
+<td>
+<div id="correccion_seleccion72"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel19"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel73" name="simple19" >
+</td>
+<td>
+<div id="seleccion73"></div>
+</td>
+<td>
+<div id="correccion_seleccion73"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel74" name="simple19" >
+</td>
+<td>
+<div id="seleccion74"></div>
+</td>
+<td>
+<div id="correccion_seleccion74"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel75" name="simple19" >
+</td>
+<td>
+<div id="seleccion75"></div>
+</td>
+<td>
+<div id="correccion_seleccion75"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel76" name="simple19" >
+</td>
+<td>
+<div id="seleccion76"></div>
+</td>
+<td>
+<div id="correccion_seleccion76"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel20"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel77" name="simple20" >
+</td>
+<td>
+<div id="seleccion77"></div>
+</td>
+<td>
+<div id="correccion_seleccion77"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel78" name="simple20" >
+</td>
+<td>
+<div id="seleccion78"></div>
+</td>
+<td>
+<div id="correccion_seleccion78"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel79" name="simple20" >
+</td>
+<td>
+<div id="seleccion79"></div>
+</td>
+<td>
+<div id="correccion_seleccion79"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel80" name="simple20" >
+</td>
+<td>
+<div id="seleccion80"></div>
+</td>
+<td>
+<div id="correccion_seleccion80"></div>
+</td>
+</tr>
+
+</table>
+<br>
+
+
+
+<p id="prueba">Presione al terminar</p>
+</section>
+
+
+
+
+
+</form>
+
+
+
+
+</section>
+
+
+
+<section id="resultado">
+
+
+<p id= "respuesta_correcta_de_sel"></p>
+<p id="respuesta_incorrecta_de_sel"></p>
+<p id="puntaje_seleccion"></p>
+<p id="punto_total"></p>
+</section>
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+ 
+
+   
+ 
+<div class="ads"> </div>
+    <!-- end post -->
+
+
+    
+    <!-- begin post -->
+    <div class="post">
+      
+
+<!-- Start WOWSlider.com BODY section id=wowslider-container2 --><script type="text/javascript" src="engine2//wowslider.js"></script>
+	<script type="text/javascript" src="engine2//script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+
+
+<!-- Start WOWSlider.com BODY section id=wowslider-container2 -->
+	
+	<script type="text/javascript" src="engine2//wowslider.js"></script>
+	<script type="text/javascript" src="engine2//script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+    </div>
+ <div class="ads"></div>
+    <p><!-- end post -->
+      <!-- begin post -->
+    </p>
+    
+  
+    
+    
+    
+   
+    
+    <!-- begin post navigation -->
+    <div class="postnav">
+
+
+      <ul>
+
+        
+
+        <li><a href="caracteristicas.html">&laquo;</a></li>
+
+        <li><a href="analisis.html">&raquo;</a></li>
+      </ul>
+
+      <div class="break"></div>
+    </div>    <!-- end post navigation -->
+  </div>
+  <!-- END content -->
+  <!-- BEGIN sidebar -->
+  <div id="sidebar">
+   <!-- begin ads -->
+<br>
+
+<br>
+
+    <div class="ads">
+
+<br>
+<br>
+
+<br>
+<br>
+
+</div>
+    <!-- end ads -->
+    <!-- begin search -->
+   
+    <!-- end search -->
+    <div class="wrapper">
+      <!-- begin popular posts -->
+      &nbsp;
+      <!-- end popular posts -->
+      <!-- begin flickr photos -->
+     
+      <div class="flickr"> 
+</div>
+      <!-- end flickr photos -->
+      <!-- begin featured video -->
+      
+      <div class="video"> &nbsp; </div>
+      <!-- end featured video -->
+      <!-- begin tags -->
+      
+      <div class="tags"> </div>
+      <!-- end tags -->
+      <!-- BEGIN left -->
+      <div class="l sbar">
+        <!-- begin categories -->
+        &nbsp;
+        <!-- end categories -->
+        <!-- begin pages -->
+        &nbsp;
+        <!-- end pages -->
+      </div>
+      <!-- END left -->
+      <!-- BEGIN right -->
+      <div class="r sbar">
+        <!-- begin archives -->
+        <h2>&nbsp;</h2>
+        &nbsp;
+        <!-- end archives -->
+        <!-- begin blogroll -->
+        &nbsp;
+        <!-- end blogroll -->
+        <!-- begin meta -->
+       
+        <!-- end meta -->
+ 
+      </div>
+      <!-- END right -->
+    </div>
+  <div class="ads"> &nbsp;</div>
+  </div>  <!-- END sidebar -->
+
+  <!-- BEGIN footer -->
+  <div id="footer">
+   
+    
+  </div>
+  <!-- END footer -->
+</div>
+<!-- END wrapper -->
+<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
+</html>

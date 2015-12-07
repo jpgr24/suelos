@@ -1,0 +1,723 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Evaluación del recurso suelo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="ie.css" /><![endif]-->
+
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" media="screen" />
+	
+	
+    
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" media="screen" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine2//style.css" media="screen" />
+	<script type="text/javascript" src="engine2//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine2//style.css" media="screen" />
+	<script type="text/javascript" src="engine2//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine3//style.css" media="screen" />
+	<script type="text/javascript" src="engine3//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine4//style.css" media="screen" />
+	<script type="text/javascript" src="engine4//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+</head>
+
+<script src="los_script.js" > 
+
+
+
+</script>
+<script src="jquery-1.6.2.min.js">
+</script>
+
+<script>
+
+
+
+//numero=new Array();
+long=4;
+z=1;
+actual=1;
+
+i=0;
+pregunta=[];
+respuesta=[];
+A=[];
+pregunta_mostrar=[];
+crr=[];
+pregunta[0]="¿Cómo se llama el proceso formador del suelo que es entrada de materiales y energía?";
+respuesta[0]="adicion";
+pregunta[1]="¿Qué proceso formador del suelo es entrada de agua?";
+respuesta[1]="adicion";
+pregunta[2]="¿Qué proceso formador del suelo es entrada de radiaciones del sol?";
+respuesta[2]="adicion";
+pregunta[3]="¿Qué proceso formador del suelo es salida de materiales y energía del pedón?";
+respuesta[3]="perdida";
+pregunta[4]="¿Qué proceso formador del suelo es la erosión?";
+respuesta[4]="perdida";
+pregunta[5]="¿Qué proceso formador del suelo es la evaporación del agua?";
+respuesta[5]="perdida";
+pregunta[6]="¿Qué proceso formador del suelo es la emisión de calor?";
+respuesta[6]="perdida";
+pregunta[7]="¿Qué proceso formador del suelo son los cambios o reacciones químicas?";
+respuesta[7]="transformacion";
+pregunta[8]="¿Qué proceso formador del suelo es la oxidación de compuestos?";
+respuesta[8]="transformacion";
+pregunta[9]="¿Qué proceso formador del suelo es la hidratación de compuestos?";
+respuesta[9]="transformacion";
+pregunta[10]="¿Qué proceso formador del suelo es la precipitación de compuestos?";
+respuesta[10]="transformacion";
+pregunta[11]="¿Qué proceso formador del suelo son los cambios en los minerales por otros factores?";
+respuesta[11]="translocacion";
+pregunta[12]="La adición es ";
+respuesta[12]="Entrada de materia y energía al pedón ";
+pregunta[13]="Ejemplo de adición es ";
+respuesta[13]="Entrada de agua de las lluvias o el riego, de radiación emitida por el sol, de sedimentos proveniente de la erosión de suelos aledaños o bien de fertilizantes ";
+pregunta[14]="La pérdida es ";
+respuesta[14]="salida de materiales y energía del pedón.  ";
+pregunta[15]="Ejemplo de pérdida es ";
+respuesta[15]="La erosión, la evaporación del agua y la emisión de calor a la atmósfera o su transferencia a suelos aledaños";
+pregunta[16]="La transformación es ";
+respuesta[16]="Cambio o reacción químicas que ocurre dentro del pedón. ";
+pregunta[17]="Ejemplos de transformación son ";
+respuesta[17]= "Las reacciones de formación de humus, arcillas, la oxidación, reducción, hidratación y precipitación de compuestos entre otros."
+pregunta[18]="La translocación es ";
+respuesta[18]= "Movimientos de materiales de un lugar a otro, u horizonte a otro, en sentido descendente o ascendente dentro del pedón. Sin salir de él.";
+pregunta[19]="Ejemplos de translocación son ";
+respuesta[19]= "La eluviación e iluviación de arcillas, o el lavado de compuestos solubles del horizonte A al B y visceversa.";
+repartir_y_ordenar(pregunta,A,pregunta_mostrar,11,2);cantidad_total=20;
+cantidad_ordenar=4;
+cantidad_pregunta_anterior=3;
+ordenar_seleccion_aleatorio(A, cantidad_total,cantidad_ordenar,cantidad_pregunta_anterior);
+
+$(document).ready(function(){
+$("#noticia").html($("#noticia1").html());
+$("#pregunta1 p").text("1) "+pregunta_mostrar[0]);
+$("#pregunta2 p").text("2) "+pregunta_mostrar[1]);cambios(/**z,actual,long, ubicacion,leyenda,ima**/);
+p1=A[3];
+p2=A[4];
+p3=A[5];
+p4=A[6];
+as=preguntas_seleccion(pregunta, respuesta,cantidad_total,p1,0);
+crr[0]=as;
+crr[1]=preguntas_seleccion(pregunta, respuesta,cantidad_total,p2,1);
+
+crr[2]=preguntas_seleccion(pregunta, respuesta,cantidad_total,p3,2);
+
+crr[3]=preguntas_seleccion(pregunta, respuesta,cantidad_total,p4,3);
+
+$("#prueba").click(function(){
+
+completa=correccion(4,A,respuesta);
+p=corregir_seleccion(0,document.examen.simple1.value,crr);
+
+p=corregir_seleccion(1,document.examen.simple2.value,crr);
+
+p=corregir_seleccion(2,document.examen.simple3.value,crr);
+p=corregir_seleccion(3,document.examen.simple4.value,crr);
+});
+
+
+var tiempo=setInterval(function(){
+//contador=0;
+//if(contador<4){
+if(z<5){
+ cambiar(z,actual,long);
+ actual=z;
+ z++;
+ //contador++;
+ 
+}else if(z==5){
+ contador=0;
+ z=1;
+//z=1;
+
+}
+//}
+
+},2000);
+
+
+
+
+
+
+
+
+});
+
+
+
+
+
+
+
+</script>
+
+<body>
+<!-- BEGIN wrapper -->
+<div id="wrapper">
+  <!-- BEGIN header -->
+  
+
+
+
+<div id="header">
+    <ul>
+      <li></li>
+    </ul>
+<p>&nbsp;</p>
+    <table width="930" border="0" align="center" cellspacing="1">
+      <tr>
+        
+
+
+
+<p id="cabeza">EVALUACIÓN DEL RECURSO SUELO</p>
+<p ><b>Procesos formadores del suelo</b></p>
+<img src="imagen_encabezado.jpg"><!-- End WOWSlider.com BODY section -->
+
+<th width="919" scope="col">
+
+</th>
+</tr>
+    </table>
+
+   
+    <div class="break"></div>
+   
+    <div class="ad498x60"></div>
+    <div class="break"></div>
+   
+    <div class="break"></div>
+
+  </div>
+  <!-- END header -->
+  <!-- BEGIN content -->
+
+ <div id="izquierdo">
+   <!-- begin ads -->
+<ul>
+ <li>Contenido</li>
+      <li><a href="index.html">Portada</a></li>
+<li><a href="definicion.html">Definicion de suelos</a></li>
+      <li><a href="ecosistema.html">Funciones de los suelos en la ecología</a></li>
+      <li><a href="unidades.html">Unidades de estudios de los suelos</a></li>
+<li><a href="composicion.html">Composición</a></li>
+      <li><a href="factores.html">Factores formadores</a></li>
+      
+
+      <li><span class="actual">Procesos formadores del suelo</span></li>
+      
+<li><a href="caracteristicas.html">Características</a></li>
+<li><a href="Prueba.html">Prueba</a></li>
+ <li><a href="analisis.html">Datos</a></li>
+
+
+
+
+     
+    </ul>
+
+    <div class="ads">
+
+</div>
+   
+  </div>  <!-- END izquierdo -->
+
+
+
+
+
+  <div id="content">
+<div id="post">
+<br>
+<h2>Procesos formadores del suelo</h2>
+<p>Durante su formación, en el suelo ocurren entradas y salidas, movimientos y  trasformaciones de materiales y energía. A estos eventos se le denomina procesos formadores del suelo. Los principales son:
+
+</p>
+
+<div id="galeria">
+<img  src='proceso.jpg'  id="imagen_noticia4" alt=''/>
+
+
+<div id="numero_foto">
+
+<p><div id="retroceder">&laquo;</div></p>
+
+<p><div id="cambio1">- Adiciones </div></p>
+ 
+       <p> <div id="cambio2">- Pérdidas </div></p>
+
+<p> <div id="cambio3">- Transformaciones</div></p>
+ <p> <div id="cambio4">- Translocaciones </div></p>
+
+
+     
+
+ 
+  
+       <p> <div id="seguir">&raquo;</div></p>
+
+</div>
+<div id="noticia">
+
+</div>
+<div id="noticia1">
+
+
+<img  src='adiciones.jpg'  id="imagen_noticia4" alt=''/>
+
+
+<h2>Adiciones</h2>
+<p>
+Son entradas de materiales y energía al pedón. Ejemplos de adiciones son la entrada de agua de las lluvias o el riego, de radiación emitida por el sol, de sedimentos proveniente de la erosión de suelos aledaños o bien de fertilizantes
+
+</p>
+</div>
+
+<div id="noticia2">
+<img  src='perdidas.jpg'  id="imagen_noticia4" alt=''/>
+
+<h2>Pérdidas</h2>
+<p>
+Son salidas de materiales y energía del pedón. Ejemplos de pérdidas son la erosión, la evaporación del agua y la emisión de calor a la atmósfera o su transferencia a suelos aledaños
+
+
+</p>
+</div>
+
+<div id="noticia3">
+<img  src='transformaciones.jpg'  id="imagen_noticia4" alt=''/>
+
+
+<h2>Transformaciones</h2>
+<p>
+
+Son cambios o reacciones químicas que ocurren dentro del pedón. Ejemplos de ello son las reacciones de formación de humus, arcillas,  la oxidación, reducción, hidratación y precipitación de compuestos entre otros.
+
+
+</p>
+</div>
+<div id="noticia4">
+<img  src='translocaciones.jpg'  id="imagen_noticia4" alt=''/>
+
+<h2>Translocaciones</h2>
+<p>
+El suelo es producto de la meteorización de rocas o sedimentos, que a su vez pueden estar constituidos por diversos minerales que presentan diferencias en las transformaciones que pueden sufrir producto de la acción de los otros factores ambientales (meteorización) 
+
+</p>
+</div>
+
+
+<div id="noticia5">
+
+<img  src='tiempo.jpg'  id="imagen_noticia6" alt=''/>
+
+<h2>El tiempo</h2>
+<p>
+
+La acción del clima, los organismos, el relieve y el material parental sobre la formación del suelo requiere tiempo. 
+
+
+</p>
+</div>
+
+
+
+
+<br>
+
+</div>
+
+</div>
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+ 
+
+   
+ 
+<div class="ads"> </div>
+    <!-- end post -->
+
+
+    
+    <!-- begin post -->
+    <div class="post">
+      
+
+<!-- Start WOWSlider.com BODY section id=wowslider-container2 --><script type="text/javascript" src="engine2//wowslider.js"></script>
+	<script type="text/javascript" src="engine2//script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+
+
+<!-- Start WOWSlider.com BODY section id=wowslider-container2 -->
+	
+	<script type="text/javascript" src="engine2//wowslider.js"></script>
+	<script type="text/javascript" src="engine2//script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+    </div>
+ <div class="ads"></div>
+    <p><!-- end post -->
+      <!-- begin post -->
+    </p>
+    
+  
+    
+    
+    
+   
+    
+    <!-- begin post navigation -->
+    <div class="postnav">
+
+
+      <ul>
+
+        
+
+
+
+        <li><a href="factores.html">&laquo;</a></li>
+<li><a href="caracteristicas.html">&raquo;</a></li>
+      </ul>
+
+      <div class="break"></div>
+    </div>    <!-- end post navigation -->
+  </div>
+  <!-- END content -->
+  <!-- BEGIN sidebar -->
+  <div id="sidebar">
+   <!-- begin ads -->
+<br>
+
+<br>
+
+    <div class="ads">
+
+
+</div>
+    <!-- end ads -->
+    <!-- begin search -->
+   
+    <!-- end search -->
+    <div class="wrapper">
+      <!-- begin popular posts -->
+      &nbsp;
+      <!-- end popular posts -->
+      <!-- begin flickr photos -->
+     
+      <div class="flickr"> <section> <form name="examen">
+<p>Complete cada espacio de texto.</p>
+<div id="pregunta1"><p></p><input type="text" id="respuesta1"></div>
+<div id="corrector1"></div>
+<br>
+<div id="pregunta2"><p></p><input type="text" id="respuesta2"></div>
+<div id="corrector2"></div>
+<br>
+<p>Marque la respuesta correcta a la pregunta</p>
+<br>
+<p id="preg_sel1"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel1" name="simple1" >
+</td>
+<td>
+<div id="seleccion1"></div>
+<br>
+</td>
+<td>
+<div id="correccion_seleccion1"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel2" name="simple1" >
+</td>
+<td>
+<div id="seleccion2"></div>
+<br>
+</td>
+<td>
+<div id="correccion_seleccion2"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel3" name="simple1" >
+</td>
+<td>
+<div id="seleccion3"></div>
+<br>
+</td>
+<td>
+<div id="correccion_seleccion3"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel4" name="simple1" >
+</td>
+<td>
+<div id="seleccion4"></div>
+<br>
+</td>
+<td>
+<div id="correccion_seleccion4"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<br>
+<p id="preg_sel2"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel5" name="simple2" >
+</td>
+<td>
+<div id="seleccion5"></div>
+</td>
+<td>
+<div id="correccion_seleccion5"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel6" name="simple2" >
+</td>
+<td>
+<div id="seleccion6"></div>
+</td>
+<td>
+<div id="correccion_seleccion6"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel7" name="simple2" >
+</td>
+<td>
+<div id="seleccion7"></div>
+</td>
+<td>
+<div id="correccion_seleccion7"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel8" name="simple2" >
+</td>
+<td>
+<div id="seleccion8"></div>
+</td>
+<td>
+<div id="correccion_seleccion8"></div>
+</td>
+</tr>
+
+</table>
+<br>
+<p id="preg_sel3"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel9" name="simple3" >
+</td>
+<td>
+<div id="seleccion9"></div>
+</td>
+<td>
+<div id="correccion_seleccion9"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel10" name="simple3" >
+</td>
+<td>
+<div id="seleccion10"></div>
+</td>
+<td>
+<div id="correccion_seleccion10"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel11" name="simple3" >
+</td>
+<td>
+<div id="seleccion11"></div>
+</td>
+<td>
+<div id="correccion_seleccion11"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel12" name="simple3" >
+</td>
+<td>
+<div id="seleccion12"></div>
+</td>
+<td>
+<div id="correccion_seleccion12"></div>
+</td>
+</tr>
+
+</table>
+<br>
+
+<p id="preg_sel4"></p>
+<table>
+<tr>
+<td>
+<input type="radio" id="sel13" name="simple4" >
+</td>
+<td>
+<div id="seleccion13"></div>
+</td>
+<td>
+<div id="correccion_seleccion13"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel14" name="simple4" >
+</td>
+<td>
+<div id="seleccion14"></div>
+</td>
+<td>
+<div id="correccion_seleccion14"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel15" name="simple4" >
+</td>
+<td>
+<div id="seleccion15"></div>
+</td>
+<td>
+<div id="correccion_seleccion15"></div>
+</td>
+</tr>
+<tr>
+<td>
+<input type="radio" id="sel16" name="simple4" >
+</td>
+<td>
+<div id="seleccion16"></div>
+</td>
+<td>
+<div id="correccion_seleccion16"></div>
+</td>
+</tr>
+
+</table>
+
+<p id="prueba">Corregir</p>
+</form></section></div>
+      <!-- end flickr photos -->
+      <!-- begin featured video -->
+      
+      <div class="video"> &nbsp; </div>
+      <!-- end featured video -->
+      <!-- begin tags -->
+      
+      <div class="tags"> </div>
+      <!-- end tags -->
+      <!-- BEGIN left -->
+      <div class="l sbar">
+        <!-- begin categories -->
+        &nbsp;
+        <!-- end categories -->
+        <!-- begin pages -->
+        &nbsp;
+        <!-- end pages -->
+      </div>
+      <!-- END left -->
+      <!-- BEGIN right -->
+      <div class="r sbar">
+        <!-- begin archives -->
+        <h2>&nbsp;</h2>
+        &nbsp;
+        <!-- end archives -->
+        <!-- begin blogroll -->
+        &nbsp;
+        <!-- end blogroll -->
+        <!-- begin meta -->
+       
+        <!-- end meta -->
+ 
+      </div>
+      <!-- END right -->
+    </div>
+  <div class="ads"> &nbsp;</div>
+  </div>  <!-- END sidebar -->
+
+  <!-- BEGIN footer -->
+  <div id="footer">
+   
+    
+  </div>
+  <!-- END footer -->
+</div>
+<!-- END wrapper -->
+<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
+</html>

@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Evaluación del recurso suelo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="ie.css" /><![endif]-->
+
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" media="screen" />
+	
+	
+    
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" media="screen" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine2//style.css" media="screen" />
+	<script type="text/javascript" src="engine2//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine2//style.css" media="screen" />
+	<script type="text/javascript" src="engine2//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine3//style.css" media="screen" />
+	<script type="text/javascript" src="engine3//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine4//style.css" media="screen" />
+	<script type="text/javascript" src="engine4//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+</head>
+
+<script src="los_script.js" > 
+
+
+
+</script>
+<script src="jquery-1.6.2.min.js">
+</script>
+
+<script>
+
+
+
+
+numero=new Array();
+long=3;
+z=1;
+actual=1;
+t=64;
+
+function detalles_de_suelo(i){
+$("resultado").empty();
+$("xml").empty();
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xml=new XMLHttpRequest();
+
+  }
+else
+ {// code for IE6, IE5
+  xml=new ActiveXObject("Microsoft.XMLHTTP"); 
+ }
+xml.open("POST","categoria.xml",false);
+//*****************************************************************************
+xml.send();
+xmlD=xml.responseXML;
+
+
+
+tipo=xmlD.getElementsByTagName("tipo")[i].innerHTML;
+$("xml").append(tipo);
+nomb=$("nombre").text();
+
+nomb_suelo=("<b>Orden de Suelo: </b>"+nomb);
+
+
+$("resultado").append(nomb_suelo);
+$("resultado").append("<br>");
+
+
+img="<img>";
+c_i=$("cant_imagen").text()
+for(j=0;j<c_i;j++)
+ img=img+"<img>";
+$("resultado").append(img);
+
+for(j=0;j<c_i;j++){
+ k=j+1;
+ l=k+".jpg";
+ imagen=nomb+l
+ $("resultado img").eq(j).attr("id","imagen_noticia6");
+ $("resultado img").eq(j).attr("src",imagen);
+}
+$("resultado").prepend("<br>")
+}
+
+
+
+function indagar(i,tipo){
+
+$("resultado").empty();
+$("xml").empty();
+$("caracteristica").empty();
+$("retro").empty();
+k=tipo.length-1
+
+
+
+
+  if(i==k){
+   detalles_de_suelo(k);}
+  else{
+$("xml").append(tipo[i].innerHTML);
+
+pregunta_caracteristica=$("descripcion").text();
+pregunta_caracteristica=pregunta_caracteristica.replace("organicos","orgánicos");
+pregunta_caracteristica=pregunta_caracteristica.replace("organica","orgánica");
+pregunta_caracteristica=pregunta_caracteristica.replace("organica","orgánica");
+pregunta_caracteristica=pregunta_caracteristica.replace("spodico","spódico");
+pregunta_caracteristica=pregunta_caracteristica.replace("volcanica","volcánica");
+pregunta_caracteristica=pregunta_caracteristica.replace("retencion","retención");
+pregunta_caracteristica=pregunta_caracteristica.replace("fosforo","fósforo");
+pregunta_caracteristica=pregunta_caracteristica.replace("oxico","óxico");
+pregunta_caracteristica=pregunta_caracteristica.replace("argilico","argílico");
+pregunta_caracteristica=pregunta_caracteristica.replace("acido","ácido");
+pregunta_caracteristica=pregunta_caracteristica.replace("oxido","óxido");
+pregunta_caracteristica=pregunta_caracteristica.replace("ari","ári");
+pregunta_caracteristica=pregunta_caracteristica.replace("dia","día");
+pregunta_caracteristica=pregunta_caracteristica.replace("molico","mólico");
+pregunta_caracteristica=pregunta_caracteristica.replace("aturacion","aturación");
+pregunta_caracteristica=pregunta_caracteristica.replace("umbrico","úmbrico");
+pregunta_caracteristica=pregunta_caracteristica.replace("pedon","pedón");
+pregunta_caracteristica=pregunta_caracteristica.replace("ambico","ámbico");
+pregunta_caracteristica="¿"+pregunta_caracteristica+"?";
+$("caracteristica").append("<p>"+pregunta_caracteristica+"</p>");
+responde='<input type="radio" id="no" name="resp" >'+'No';
+$("caracteristica").append("<p>"+responde+"</p>");
+responde='<input type="radio" id="si" name="resp" >'+'Si';  
+$("caracteristica").append("<p>"+responde+"</p>");
+
+
+ 
+}
+
+
+ $("#no").click(function(){ 
+  
+  j=i+1;
+  indagar(j,tipo);
+ 
+ 
+ });
+$("#si").click(function(){
+   detalles_de_suelo(i)
+ 
+ });
+
+if(i!=0)
+ $("retro").append("<antes>Anterior</antes>");
+
+
+
+
+
+$("antes").click(function(){
+  
+  
+   
+  indagar(i-1,tipo);
+ 
+ 
+ });
+
+$("comienzo").click(function(){
+  
+  
+  
+  indagar(0,tipo);
+  
+ 
+ });
+
+$("antes").mouseenter(function(){
+$("antes").css({"color": "#1F498d"});});
+
+$("antes").mouseleave(function(){
+
+$("antes").css({"color":"#FF0000"});});
+
+$("antes").css({"color":"#FF0000"});
+
+
+
+}
+
+
+$(document).ready(function(){
+
+ $("xml").empty();
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xml=new XMLHttpRequest();
+
+  }
+else
+ {// code for IE6, IE5
+  xml=new ActiveXObject("Microsoft.XMLHTTP"); 
+ }
+xml.open("POST","categoria.xml",false);
+//*****************************************************************************
+xml.send();
+xD=xml.responseXML;
+tipo=xD.getElementsByTagName("tipo");
+for(i=0;i<tipo.length;i++){
+ j=i+1;
+ //k=i+7;
+ ta="<p>"+j+". "+xD.getElementsByTagName("nombre")[i].innerHTML+"</p><br>";
+
+$("#post").append(ta);
+}
+$("#post").append("<br>");
+indagar(0,tipo);
+$("comienzo").css({"color":"#FF0000", "font-family":"Lucida Sans"});
+
+$("comienzo").mouseenter(function(){
+$("comienzo").css({"color": "#1F498d"});});
+
+$("comienzo").mouseleave(function(){
+
+$("comienzo").css({"color":"#FF0000"});});
+
+$("comienzo").css({"color":"#FF0000"});
+$("comienzo").css({"color":"#FF0000", "font-family":"Lucida Sans"});
+
+
+cambios();
+
+
+
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+</script>
+
+<body>
+<!-- BEGIN wrapper -->
+<div id="wrapper">
+  <!-- BEGIN header -->
+  
+
+
+
+<div id="header">
+    <ul>
+      <li></li>
+    </ul>
+<p>&nbsp;</p>
+    <table width="930" border="0" align="center" cellspacing="1">
+      <tr>
+        
+
+
+
+<p id="cabeza">EVALUACIÓN DEL RECURSO SUELO</p>
+<p><b>Identificación Taxonómica del Suelo</b></p>
+
+
+<img src="imagen_encabezado.jpg"><!-- End WOWSlider.com BODY section -->
+
+<th width="919" scope="col">
+
+</th>
+</tr>
+    </table>
+
+   
+    <div class="break"></div>
+   
+    <div class="ad498x60"></div>
+    <div class="break"></div>
+   
+    <div class="break"></div>
+
+  </div>
+  <!-- END header -->
+  <!-- BEGIN content -->
+
+ <div id="izquierdo">
+   <!-- begin ads -->
+<ul>
+ <li><b>Contenido</b></li>
+      <li><a href="index.html">Inicio</a></li>
+<li><a href="definicion.html">Definicion de suelos</a></li>
+      <li><a href="ecosistema.html">Funciones de los suelos en el ecosistema</a></li>
+      <li><a href="unidades.html">Unidades de estudios de los suelos</a></li>
+      <li><a href="composicion.html">Composición del suelo</a></li>
+     
+<li><a href="factores.html">Factores formadores del suelo</a></li>
+      <li><a href="formacion.html">Procesos formadores del suelo</a></li>
+      
+<li><a href="caracteristicas.html">Características del suelo</a></li>
+<li><a href="prueba.html">Prueba</a></li>
+ <li><span class="actual">Datos</span></li>
+
+
+
+
+     
+    </ul>
+
+    <div class="ads">
+
+</div>
+   
+  </div>  <!-- END izquierdo -->
+
+
+
+
+
+  <div id="content">
+<div id="post">
+<p><b>De acuerdo al Soil Taxonomy, se pueden identificar los suelos dentro de 12 categorías u órdenes. Ellos son:</b></p>
+<br>
+
+</div>
+
+
+<section>
+<form name="caracteristica">
+
+
+
+
+
+
+<caracteristica>
+
+</caracteristica>
+
+
+
+
+
+<resultado>
+<nombre></nombre>
+
+<imagenes>
+</imagenes>
+</resultado>
+
+
+</form>
+
+<mueve>
+<comienzo>Volver al principio</comienzo>
+<retro>
+</retro>
+</mueve>
+
+
+</section>
+
+
+<p id="valor"></p>
+
+
+<xml>
+
+</xml>
+
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+ 
+
+   
+ 
+<div class="ads"> </div>
+    <!-- end post -->
+
+
+    
+    <!-- begin post -->
+    <div class="post">
+      
+
+<!-- Start WOWSlider.com BODY section id=wowslider-container2 --><script type="text/javascript" src="engine2//wowslider.js"></script>
+	<script type="text/javascript" src="engine2//script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+
+
+<!-- Start WOWSlider.com BODY section id=wowslider-container2 -->
+	
+	<script type="text/javascript" src="engine2//wowslider.js"></script>
+	<script type="text/javascript" src="engine2//script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+    </div>
+ <div class="ads"></div>
+    <p><!-- end post -->
+      <!-- begin post -->
+    </p>
+    
+  
+    
+    
+    
+   
+    
+    <!-- begin post navigation -->
+    <div class="postnav">
+
+
+      <ul>
+
+        
+
+
+        <li><a href="prueba.html">&laquo;</a></li>
+        <li><a href="bibliografia.html">&raquo;</a></li>
+      </ul>
+
+      <div class="break"></div>
+    </div>    <!-- end post navigation -->
+  </div>
+  <!-- END content -->
+  <!-- BEGIN sidebar -->
+  <div id="sidebar">
+   <!-- begin ads -->
+<br>
+
+<br>
+
+    <div class="ads">
+
+<br>
+<br>
+
+<br>
+<br>
+
+</div>
+    <!-- end ads -->
+    <!-- begin search -->
+   
+    <!-- end search -->
+    <div class="wrapper">
+      <!-- begin popular posts -->
+      &nbsp;
+      <!-- end popular posts -->
+      <!-- begin flickr photos -->
+     
+      <div class="flickr"> 
+</div>
+      <!-- end flickr photos -->
+      <!-- begin featured video -->
+      
+      <div class="video"> &nbsp; </div>
+      <!-- end featured video -->
+      <!-- begin tags -->
+      
+      <div class="tags"> </div>
+      <!-- end tags -->
+      <!-- BEGIN left -->
+      <div class="l sbar">
+        <!-- begin categories -->
+        &nbsp;
+        <!-- end categories -->
+        <!-- begin pages -->
+        &nbsp;
+        <!-- end pages -->
+      </div>
+      <!-- END left -->
+      <!-- BEGIN right -->
+      <div class="r sbar">
+        <!-- begin archives -->
+        <h2>&nbsp;</h2>
+        &nbsp;
+        <!-- end archives -->
+        <!-- begin blogroll -->
+        &nbsp;
+        <!-- end blogroll -->
+        <!-- begin meta -->
+       
+        <!-- end meta -->
+ 
+      </div>
+      <!-- END right -->
+    </div>
+  <div class="ads"> &nbsp;</div>
+  </div>  <!-- END sidebar -->
+
+  <!-- BEGIN footer -->
+  <div id="footer">
+   
+    
+  </div>
+  <!-- END footer -->
+</div>
+<!-- END wrapper -->
+<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
+</html>

@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Evaluación del recurso suelo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="ie.css" /><![endif]-->
+
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" media="screen" />
+	
+	
+    
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" media="screen" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine2//style.css" media="screen" />
+	<script type="text/javascript" src="engine2//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine2//style.css" media="screen" />
+	<script type="text/javascript" src="engine2//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine3//style.css" media="screen" />
+	<script type="text/javascript" src="engine3//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+
+<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine4//style.css" media="screen" />
+	<script type="text/javascript" src="engine4//jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+</head>
+
+<script src="los_script.js" > 
+
+
+
+</script>
+<script src="jquery-1.6.2.min.js">
+</script>
+
+<script>
+
+
+numero=new Array();
+long=3;
+z=1;
+actual=1;
+pregunta=[];
+respuesta=[];
+
+pregunta[0]="Es un cuerpo natural o modificado por el hombre, constituido por materiales orgánicos e inorgánicos, además de fases líquidas y gaseosas, que se encuentra sobre la superficie de la tierra, contiene seres vivos y es capaz de mantener plantas";
+respuesta[0]="suelo";
+pregunta[1]="Conjunto de pedones que conforman un individuo suelo.";
+respuesta[1]="polipedon";
+pregunta[2]="El polipedón está formado por ";
+respuesta[2]="pedon";
+pregunta[3]="Está conformado por diferentes capas horizontales ";
+respuesta[3]="horizontes";
+pregunta[4]="Este horizonte es una capa orgánica superficial, constituida por restos de plantas total o parcialmente descompuestas. ¿Cuál es? ";
+respuesta[4]="o";
+pregunta[5]="El horizonte o está formado por restos descompuestos de ";
+respuesta[5]="plantas";
+pregunta[6]="Este horizonte es la capa mineral mas superficial con mayor acumulación de materia orgánica descompuesta y colores mas oscuros. Presenta también mayor lavado de arcillas y compuestos solubles . Se le conoce también como horizonte de Iluviación. ¿Cuál es? ";
+respuesta[6]="A";
+pregunta[7]="El horizonte A es conocido tambien como horizonte de ";
+respuesta[7]="iluvacion";
+pregunta[8]="Este horizonte es Es una capa mineral, debajo del horizonte A, de colores mas claros y que concentra las arcillas y compuestos solubles lavados del horizonte A. Se le conoce también como horizonte de eluviación ¿Cuál es? ";
+respuesta[8]="B";
+pregunta[9]="El horizonte B es conocido tambien como horizonte de ";
+respuesta[9]="eluvacion";
+pregunta[10]="El horizonte B concentra arcillas y compuestos solubles lavados del horizonte ";
+respuesta[10]="A";
+pregunta[11]="El horizonte B está debajo del horizonte ";
+respuesta[11]="A";
+pregunta[12]="Es un horizonte mineral de transición que tiene restos de material parental y material meteorizado. ¿Cuál es ese horizonte? ";
+respuesta[12]="C";
+pregunta[13]="El horizonte C está debajo del horizonte ";
+respuesta[13]="B";
+pregunta[14]="Si el horizonte B no se ha formado el horizonte C ¿De cuál horizonte está debajo? ";
+respuesta[14]="A";
+pregunta[15]="No es un horizonte. Es la roca o sedimentos de donde se origina el suelo. Usualmente se le denomina con la letra R ";
+respuesta[15]="material Parental";
+pregunta[16]="¿Con cuál letra se denomina al material parental? ";
+respuesta[16]="R";
+pregunta[17]="¿El suelo está compuesto por diferentes fases de qué? ";
+respuesta[17]="materia";
+pregunta[18]="O2 para la respiración de raíces, mo y fauna del suelo, CO2 producido por la respiración, vapor de agua, etc . ";
+respuesta[18]="aire";
+pregunta[19]="¿Qué tiene el aire para la respiración? ";
+respuesta[19]="O2";
+pregunta[20]="¿Qué produce la respiración? ";
+respuesta[20]="CO2";
+pregunta[21]="Es disolución para la movilidad de los nutrientes y para hidratación de la biota del suelo,incluyendo las raíces ";
+respuesta[21]="agua";
+pregunta[22]="El agua mueve ";
+respuesta[22]="nutrientes";
+pregunta[23]="El agua es útil para la biota del suelo es útil para ";
+respuesta[23]="hidratacion";
+pregunta[24]="¿Las rocas meteorizadas, minerales primarios y secundarios qué fase forman?";
+respuesta[24]="mineral";
+pregunta[25]="La fase mineral la conforman rocas";
+respuesta[25]="meteorizadas";
+pregunta[26]="Los restos de plantas y animales muy descompuestos ¿Qué fase conforman?";
+respuesta[26]="organica";
+pregunta[27]="¿Qué factor formador acelera a través de la temperatura y la precipitación la meteorización del material parental?";
+respuesta[27]="clima";
+pregunta[28]="¿Qué favorecen las altas temperaturas y precipitaciones?";
+respuesta[28]="meteorizacion";
+pregunta[29]="¿Qué factor formador del suelo se conoce como la forma e inclinación del terreno?";
+respuesta[29]="erosion";
+pregunta[30]="¿Qué factor formador aporta materia orgánica al suelo y favorecen a la aireación?";
+respuesta[30]="organismos";
+pregunta[31]="¿Qué factor formador está relacionado con rocas o minerales?";
+respuesta[31]="material parental";
+pregunta[32]="¿Qué requiere la acción del clima, relieve y material parental para formar el suelo?";
+respuesta[32]="tiempo";
+pregunta[33]="¿Cómo se llama el proceso formador del suelo que es entrada de materiales y energía?";
+respuesta[33]="adicion";
+pregunta[34]="¿Qué proceso formador del suelo es entrada de agua?";
+respuesta[34]="adicion";
+pregunta[35]="¿Qué proceso formador del suelo es entrada de radiaciones del sol?";
+respuesta[35]="adicion";
+pregunta[36]="¿Qué proceso formador del suelo es salida de materiales y energía del pedón?";
+respuesta[36]="perdida";
+pregunta[37]="¿Qué proceso formador del suelo es la erosión?";
+respuesta[37]="perdida";
+pregunta[38]="¿Qué proceso formador del suelo es la evaporación del agua?";
+respuesta[38]="perdida";
+pregunta[39]="¿Qué proceso formador del suelo es la emisión de calor?";
+respuesta[39]="perdida";
+pregunta[40]="¿Qué proceso formador del suelo son los cambios o reacciones químicas?";
+respuesta[40]="transformacion";
+pregunta[41]="¿Qué proceso formador del suelo es la oxidación de compuestos?";
+respuesta[41]="transformacion";
+pregunta[42]="¿Qué proceso formador del suelo es la hidratación de compuestos?";
+respuesta[42]="transformacion";
+pregunta[43]="¿Qué proceso formador del suelo es la precipitación de compuestos?";
+respuesta[43]="transformacion";
+pregunta[44]="¿Qué proceso formador del suelo son los cambios en los minerales por otros factores?";
+respuesta[44]="translocacion";
+pregunta[45]="¿Qué característica del suelo está relacionada con el clima?";
+respuesta[45]="pedoclimatica";
+pregunta[46]="¿Con qué se relaciona las características pedoclimáticas?";
+respuesta[46]="clima";
+pregunta[47]="El régimen de humedad ¿Qué característica es?";
+respuesta[47]="pedoclimatica";
+pregunta[48]="La temperatura  ¿Qué característica es?";
+respuesta[48]="pedoclimatica";
+pregunta[49]="La ubicación del paisaje del pedón  ¿Qué característica es?";
+respuesta[49]="posicional";
+pregunta[50]="El relieve. ¿Qué característica es?";
+respuesta[50]="posicional";
+pregunta[51]="La susceptibilidad a la erosión ¿Qué característica es?";
+respuesta[51]="posicional";
+pregunta[52]="El drenaje ¿Qué característica es?";
+respuesta[52]="posicional";
+pregunta[53]="¿Qué característica de los suelos que puede ser evaluada en el campo directamente, estudiando los perfiles?";
+respuesta[53]="morfologica";
+pregunta[54]="¿Qué característica de los suelos es la profundidad?";
+respuesta[54]="morfologica";
+pregunta[55]="¿Qué característica de los suelos es el número de horizontes?";
+respuesta[55]="morfologica";
+pregunta[56]="¿Qué característica de los suelos es el color?";
+respuesta[56]="morfologica";
+pregunta[57]="¿Qué característica de los suelos es la presencia de grietas?";
+respuesta[57]="morfologica";
+pregunta[58]="¿Qué característica de los suelos es la actividad biológica?";
+respuesta[58]="morfologica";
+pregunta[59]="¿Qué característica de los suelos se evalúa en los laboratorios?";
+respuesta[59]="composicional";
+pregunta[60]="¿Qué característica de los suelos es el PH4?";
+respuesta[60]="composicional";
+pregunta[61]="¿Qué característica de los suelos es el contenido de nutrientes?";
+respuesta[61]="composicional";
+pregunta[62]="¿Qué característica de los suelos es la textura?";
+respuesta[62]="composicional";
+pregunta[63]="¿Qué característica de los suelos es el tipo de arcilla?";
+respuesta[63]="composicional";
+pregunta[64]="¿Qué característica de los suelos es el tipo de microorganismos en el suelo?";
+respuesta[64]="composicional";
+pregunta[65]="La produccion biologica es ";
+respuesta[65]="Función del suelo en el ecosistema";
+pregunta[66]="El banco de semillas es ";
+respuesta[66]="Función del suelo en el ecosistema";
+pregunta[67]="La descomposición de materia orgánica y ciclaje de nutrientes es ";
+respuesta[67]="Función del suelo en el ecosistema";
+pregunta[68]="El hábitat para la biota es ";
+respuesta[68]="Función del suelo en el ecosistema";
+pregunta[69]="El filtro ambiental es ";
+respuesta[69]="Función del suelo en el ecosistema";
+pregunta[70]="El almacenaje de agua es ";
+respuesta[70]="Función del suelo en el ecosistema";
+pregunta[71]="La producción biológica, la descomposición de materia orgánica, el hábitat para la biota y el filtro ambiental son ";
+respuesta[71]="Funciones del suelo en el ecosistema";
+pregunta[72]="El perfil es ";
+respuesta[72]="En un corte del suelo, en dos dimensiones, que se extiende desde la superficie del suelo hasta el material parental y permite visualizar y estudiar las características del suelo.";
+pregunta[73]="El pedon es ";
+respuesta[73]="unidad tridimensional o volumen de suelo, en el cual se pueden visualizar o estudiar las características de los suelos desde diferentes ángulos.";
+pregunta[74]="El polipedon es ";
+respuesta[74]="Conjunto de pedones que conforman un individuo suelo.";
+pregunta[75]="El suelo se visualiza a través de ";
+respuesta[75]="Los horizontes del suelo y diferentes fases de la materia ";
+pregunta[76]="El horizonte o es ";
+respuesta[76]="Una capa orgánica superficial, constituida por restos de plantas total o parcialmente descompuestas. ";
+pregunta[77]="El horizonte A es ";
+respuesta[77]="Es la capa mineral mas superficial con mayor acumulación de materia orgánica descompuesta y colores mas oscuros. ";
+pregunta[78]="El horizonte B es ";
+respuesta[78]="Se le conoce también como horizonte de eluviación ";
+pregunta[79]="El horizonte C es ";
+respuesta[79]="Es un horizonte mineral de transición que tiene restos de material parental y material meteorizado ";
+pregunta[80]="El Material Parental es ";
+respuesta[80]="La roca o sedimentos de donde se origina el suelo.  ";
+pregunta[81]="El aire es ";
+respuesta[81]="O2 para la respiración de raíces, mo y fauna del suelo, CO2 producido por la respiración, vapor de agua, etc. ";
+pregunta[82]="Los estados de la materia son ";
+respuesta[82]="Líquido, sólido y gaseoso ";
+pregunta[83]="El agua es ";
+respuesta[83]="Disolución para la movilidad de los nutrientes y para hidratación de la biota del suelo ";
+pregunta[84]="La fase mineral se compone por ";
+respuesta[84]="Rocas meteorizadas, minerales primarios y secundarios ";
+pregunta[85]="La fase orgánica se compone por ";
+respuesta[85]="Restos de plantas y animales muy descompuestos ";
+pregunta[86]="El clima favorece la meteorización del material a través de ";
+respuesta[86]="La temperatura y la precipitación ";
+pregunta[87]="La erosión se influencia por ";
+respuesta[87]="La forma e inclinación del terreno ";
+pregunta[88]="La adición es ";
+respuesta[88]="Entrada de materia y energía al pedón ";
+pregunta[89]="Ejemplo de adición es ";
+respuesta[89]="Entrada de agua de las lluvias o el riego, de radiación emitida por el sol, de sedimentos proveniente de la erosión de suelos aledaños o bien de fertilizantes ";
+pregunta[90]="La pérdida es ";
+respuesta[90]="salida de materiales y energía del pedón.  ";
+pregunta[91]="Ejemplo de pérdida es ";
+respuesta[91]="La erosión, la evaporación del agua y la emisión de calor a la atmósfera o su transferencia a suelos aledaños";
+pregunta[92]="La transformación es ";
+respuesta[92]="Cambio o reacción químicas que ocurre dentro del pedón. ";
+pregunta[93]="Ejemplos de transformación son ";
+respuesta[93]= "Las reacciones de formación de humus, arcillas, la oxidación, reducción, hidratación y precipitación de compuestos entre otros."
+pregunta[94]="La translocación es ";
+respuesta[94]= "Movimientos de materiales de un lugar a otro, u horizonte a otro, en sentido descendente o ascendente dentro del pedón. Sin salir de él.";
+pregunta[95]="Ejemplos de translocación son ";
+respuesta[95]= "La eluviación e iluviación de arcillas, o el lavado de compuestos solubles del horizonte A al B y visceversa.";
+pregunta[96]="La característica pedoclimática es ";
+respuesta[96]= "La que se relacionadas con el clima en donde se desarrolla el suelo";
+pregunta[97]="Las características pedoclimáticas importantes son ";
+respuesta[97]= "Los regímenes de humedad y temperatura";
+pregunta[98]="La característica posicional del suelo es ";
+respuesta[98]= "La que se relaciona con la ubicación en el paisaje del pedón";
+pregunta[99]="Ejemplo de las características posicionales importantes son ";
+respuesta[99]= "el tipo de material parental, el relieve, la susceptibilidad a la erosión y el drenaje";
+pregunta[100]="La característica morfológica es ";
+respuesta[100]= "La que pueden ser evaluadas en el campo directamente, estudiando los perfiles o pedones";
+pregunta[101]="Ejemplos de las características morfológicas son ";
+respuesta[101]= "la profundidad, el número y grosor de los horizontes que lo componen, el color, la presencia de poros y grietas, la presencia de carbonatos y morfones y la actividad biológica";
+pregunta[102]="La característica composicional es ";
+respuesta[102]= "La que que debe evaluarse en el laboratorio";
+pregunta[103]="Ejemplos de las características composicionales son ";
+respuesta[103]= "el pH, el contenido de nutrientes, la textura, el tipo de arcillas y microorganismos del suelo";
+
+
+
+
+i=0;
+//t=aleatorio(67);
+A=[];
+pregunta_mostrar=[];
+repartir_y_ordenar(pregunta,A,pregunta_mostrar,67,13);
+acum=0;
+
+total_pregunta=13;
+//sex.value='a';
+//document.examen.sex.value="b";
+
+
+/**
+**/
+
+
+
+
+cantidad_total=107;
+cantidad_ordenar=21;
+cantidad_pregunta_anterior=14;
+
+ordenar_seleccion_aleatorio(A, cantidad_total,cantidad_ordenar,cantidad_pregunta_anterior);
+
+
+
+
+crr=[];
+
+/**function corregir_seleccion(i,se,correcta){
+ aux=correcta[i];
+//se=document.examen.simple4.value;
+j=4*i;
+aux=aux+j;
+co="#seleccion";
+corr_sel=co+aux;
+correccion=$(corr_sel).text();
+
+
+retorno=0;
+//j=4*i;
+//
+if(se=="Correcto"){
+
+
+ correccion=$(corr_sel).text();
+ correccion=correccion+"      correcto";
+ retorno=1;
+
+}else{
+
+ //se=se+1;
+se=Number(se);
+//se=se+1;
+se=se+1;
+se=se+j;
+ se=co+se;
+ txt=$(se).text();
+ txt=txt+" respuesta incorrecta";
+ alert(se);
+ correccion=correccion+" Respuesta correcta";
+$(se).text(txt);
+}
+
+$(corr_sel).text(correccion);
+return retorno;
+}**/
+
+
+$(document).ready(function(){
+cambios(/**z,actual,long, ubicacion,leyenda,ima**/);
+for(i=0;i<105;i++)
+ $("#post").append(i+") Pregunta: "+pregunta[i]+" <br>Respuesta: "+respuesta[i]+"<br>");
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+</script>
+
+<body>
+<!-- BEGIN wrapper -->
+<div id="wrapper">
+  <!-- BEGIN header -->
+  
+
+
+
+<div id="header">
+    <ul>
+      <li></li>
+    </ul>
+<p>&nbsp;</p>
+    <table width="930" border="0" align="center" cellspacing="1">
+      <tr>
+        
+
+
+
+<p id="cabeza">EVALUACIÓN DEL RECURSO SUELO</p>
+<p><b>Examen</b></p>
+
+
+<img src="imagen_encabezado.jpg"><!-- End WOWSlider.com BODY section -->
+
+<th width="919" scope="col">
+
+</th>
+</tr>
+    </table>
+
+   
+    <div class="break"></div>
+   
+    <div class="ad498x60"></div>
+    <div class="break"></div>
+   
+    <div class="break"></div>
+
+  </div>
+  <!-- END header -->
+  <!-- BEGIN content -->
+
+ <div id="izquierdo">
+   <!-- begin ads -->
+<ul>
+ <li><b>Contenido</b></li>
+      <li><a href="index.html">Inicio</a></li>
+<li><a href="definicion.html">Definicion de suelos</a></li>
+      <li><a href="ecosistema.html">Funciones de los suelos en el ecosistema</a></li>
+      <li><a href="unidades.html">Unidades de estudios de los suelos</a></li>
+      <li><a href="composicion.html">Composición del suelo</a></li>
+     
+<li><a href="factores.html">Factores formadores del suelo</a></li>
+      <li><a href="formacion.html">Procesos formadores del suelo</a></li>
+      
+<li><a href="caracteristicas.html">Características del suelo</a></li>
+<li><span class="actual">Prueba</span></li>
+ <li><a href="analisis.html">Datos</a></li>
+
+
+
+
+     
+    </ul>
+
+    <div class="ads">
+
+</div>
+   
+  </div>  <!-- END izquierdo -->
+
+
+
+
+
+  <div id="content">
+<div id="post">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+ 
+
+   
+ 
+<div class="ads"> </div>
+    <!-- end post -->
+
+
+    
+    <!-- begin post -->
+    <div class="post">
+      
+
+<!-- Start WOWSlider.com BODY section id=wowslider-container2 --><script type="text/javascript" src="engine2//wowslider.js"></script>
+	<script type="text/javascript" src="engine2//script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+
+
+<!-- Start WOWSlider.com BODY section id=wowslider-container2 -->
+	
+	<script type="text/javascript" src="engine2//wowslider.js"></script>
+	<script type="text/javascript" src="engine2//script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+    </div>
+ <div class="ads"></div>
+    <p><!-- end post -->
+      <!-- begin post -->
+    </p>
+    
+  
+    
+    
+    
+   
+    
+    <!-- begin post navigation -->
+    <div class="postnav">
+
+
+      <ul>
+
+        
+
+
+
+        <li><a href="definicion.html">&raquo;</a></li>
+      </ul>
+
+      <div class="break"></div>
+    </div>    <!-- end post navigation -->
+  </div>
+  <!-- END content -->
+  <!-- BEGIN sidebar -->
+  <div id="sidebar">
+   <!-- begin ads -->
+<br>
+
+<br>
+
+    <div class="ads">
+
+<br>
+<br>
+
+<br>
+<br>
+
+</div>
+    <!-- end ads -->
+    <!-- begin search -->
+   
+    <!-- end search -->
+    <div class="wrapper">
+      <!-- begin popular posts -->
+      &nbsp;
+      <!-- end popular posts -->
+      <!-- begin flickr photos -->
+     
+      <div class="flickr"> 
+<div id="posibles_respuestas">
+Éstas son las posibles respuestas de las preguntas de la I parte, responder como están escritas aquí.
+</div></div>
+      <!-- end flickr photos -->
+      <!-- begin featured video -->
+      
+      <div class="video"> &nbsp; </div>
+      <!-- end featured video -->
+      <!-- begin tags -->
+      
+      <div class="tags"> </div>
+      <!-- end tags -->
+      <!-- BEGIN left -->
+      <div class="l sbar">
+        <!-- begin categories -->
+        &nbsp;
+        <!-- end categories -->
+        <!-- begin pages -->
+        &nbsp;
+        <!-- end pages -->
+      </div>
+      <!-- END left -->
+      <!-- BEGIN right -->
+      <div class="r sbar">
+        <!-- begin archives -->
+        <h2>&nbsp;</h2>
+        &nbsp;
+        <!-- end archives -->
+        <!-- begin blogroll -->
+        &nbsp;
+        <!-- end blogroll -->
+        <!-- begin meta -->
+       
+        <!-- end meta -->
+ 
+      </div>
+      <!-- END right -->
+    </div>
+  <div class="ads"> &nbsp;</div>
+  </div>  <!-- END sidebar -->
+
+  <!-- BEGIN footer -->
+  <div id="footer">
+   
+    
+  </div>
+  <!-- END footer -->
+</div>
+<!-- END wrapper -->
+<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
+</html>

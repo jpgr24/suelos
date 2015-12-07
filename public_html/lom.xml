@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM" xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance" xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM http://ltsc.ieee.org/xsd/lomv1.0/lom.xsd">
+<general>
+<title>
+<string language="es">Evaluacion de recurso suelo</string>
+</title>
+<language>
+es
+</language>
+<description>
+<string language="es">Objeto que enseña sobre suelos.</string>
+</description>
+<keyword>
+<string language="es">Suelos</string>
+</keyword>
+<keyword>
+<string language="es">taxonomía</string>
+<string language="es">ecosistema</string>
+<string language="es">producción biológica</string>
+<string language="es">semillas</string>
+<string language="es">biota</string>
+<string language="es">almacenamiento</string>
+<string language="es">agua</string>
+<string language="es">filtro</string>
+<string language="es">ambiente</string>
+<string language="es">unidades muestrales</string>
+<string language="es">perfil</string>
+<string language="es">pedón</string>
+<string language="es">polipedón</string>
+<string language="es">composición</string>
+<string language="es">horizontes</string>
+<string language="es">O</string>
+<string language="es">A</string>
+<string language="es">B</string>
+<string language="es">C</string>
+<string language="es">Material parental</string>
+<string language="es">Fases</string>
+<string language="es">Gaseoso</string>
+<string language="es">Líquido</string>
+<string language="es">Sólido</string>
+<string language="es">Factores</string>
+<string language="es">Clima</string>
+<string language="es">Relieve</string>
+<string language="es">Organismos</string>
+<string language="es">Tiempo</string>
+<string language="es">Formación</string>
+<string language="es">Adición</string>
+<string language="es">Pérdida</string>
+<string language="es">Transformación</string>
+<string language="es">Translocación</string>
+<string language="es">Pedoclimáticas</string>
+<string language="es">Posicionales</string>
+<string language="es">Morfológicas</string>
+<string language="es">Composicionales</string>
+</keyword>
+</general>
+<lifeCycle>
+<version>
+<string>1</string>
+</version>
+<status>
+<source>LOMv1.0</source>
+<value>final</value>
+</status>
+<contribute>
+<role>
+<source>LOMv1.0</source>
+<value>author</value>
+</role>
+<entity>
+BEGIN:VCARD
+VERSION:3.0
+FN:Juan
+EMAIL;TYPE=INTERNET:jgroening@yahoo.com
+ORG:UCV
+END:VCARD</entity>
+<date>
+<dateTime>2015-03-11T23:25:30</dateTime>
+<description>
+<string language="es">no</string>
+</description>
+</date>
+</contribute>
+</lifeCycle>
+<metaMetadata>
+<identifier>
+<catalog>0</catalog>
+<entry>0</entry>
+</identifier>
+<contribute>
+<role>
+<source>LOMv1.0</source>
+<value>creator</value>
+</role>
+<entity>
+BEGIN:VCARD
+VERSION:3.0
+FN:Juan
+EMAIL;TYPE=INTERNET:jgroening@yahoo.com
+ORG:UCV
+END:VCARD</entity>
+<date>
+<dateTime>2015-03-11T23:27:30Z</dateTime>
+<description>
+<string>no</string>
+</description>
+</date>
+</contribute>
+<metadataSchema>
+Title
+</metadataSchema>
+<metadataSchema>
+Keyword
+</metadataSchema>
+<metadataSchema>
+Location
+</metadataSchema>
+<language>
+es
+</language>
+</metaMetadata>
+<technical>
+<format>
+html
+</format>
+<size>
+217
+</size>
+<location>
+http://recursosuelo.herobo.com/
+</location>
+<requirement>
+<orComposite>
+<type><source>LOMv1.0</source>
+<value>browser</value>
+</type>
+<name><source>LOMv1.0</source>
+<value>any</value>
+</name>
+</orComposite>
+</requirement>
+<installationRemarks>
+<string>no</string>
+</installationRemarks>
+<otherPlatformRequirements>
+<string>no</string>
+</otherPlatformRequirements>
+<duration>
+<duration>P2015Y3M11DT23H32M</duration>
+</duration>
+</technical>
+<educational>
+<interactivityType>
+<source>LOMv1.0</source>
+<value>active</value>
+</interactivityType>
+<learningResourceType>
+<source>LOMv1.0</source>
+<value>graph</value>
+</learningResourceType>
+<interactivityLevel>
+<source>LOMv1.0</source>
+<value>high</value>
+</interactivityLevel>
+<semanticDensity>
+<source>LOMv1.0</source>
+<value>low</value>
+</semanticDensity>
+<intendedEndUserRole>
+<source>LOMv1.0</source>
+<value>teacher</value>
+</intendedEndUserRole>
+<context>
+<source>LOMv1.0</source>
+<value>other</value>
+</context>
+<typicalAgeRange>
+<string>16-30</string>
+</typicalAgeRange>
+<difficulty>
+<source>LOMv1.0</source>
+<value>easy</value>
+</difficulty>
+<typicalLearningTime>
+<duration>P1Y1M1DT1H1M1S</duration>
+</typicalLearningTime>
+<language>
+es
+</language>
+</educational>
+<rights>
+<cost>
+<source>LOMv1.0</source>
+<value>no</value>
+</cost>
+<copyrightAndOtherRestrictions>
+<source>LOMv1.0</source>
+<value>no</value>
+</copyrightAndOtherRestrictions>
+<description>
+<string>no</string>
+</description>
+</rights>
+<relation>
+<kind>
+<source>LOMv1.0</source>
+<value>references</value>
+</kind>
+</relation>
+<annotation>
+<entity>
+BEGIN:VCARD
+VERSION:3.0
+FN:Juan
+EMAIL;TYPE=INTERNET:jgroening@yahoo.com
+ORG:UCV
+END:VCARD</entity>
+<date>
+<dateTime>2015-03-11T23:35:30.0</dateTime>
+<description>
+<string>no</string>
+</description>
+</date>
+<description>
+<string>no</string>
+</description>
+</annotation>
+<classification>
+<purpose>
+<source>LOMv1.0</source>
+<value>educational objective</value>
+</purpose>
+<taxonPath>
+<source>
+<string language="es">http://www.um.es/ead/red/M10/zapata_GLO.pdf</string>
+</source>
+<taxon>
+<id>2</id>
+<entry><string>3</string>
+
+</entry>
+</taxon>
+</taxonPath>
+</classification>
+</lom>
